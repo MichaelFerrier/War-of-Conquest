@@ -1,0 +1,373 @@
+name	ID	category	order	icon	initial	random	duration type	duration time	default price	min price	max price	prerequisite tech 1	prerequisite tech 2	prerequisite level	bonus type 1	bonus val 1	bonus val max 1	bonus type 2	bonus val 2	bonus val max 2	bonus type 3	bonus val 3	bonus val max 3	new structure	obsolete structure	obsolete tech	description
+### Version 1																											
+### Tech Advances																											
+Chemistry	0	tech	1				permanent		0						salvage_value	5		attack_manpower	6		tech	1					Knowledge of chemical interactions, and techniques capable of producing useful concoctions.
+Electromagnetism	1	tech	1				permanent		0			Chemistry			manpower_max	3750		manpower_rate	320		tech	1					An understanding of how electric and magnetic fields interact allows us to harness powerful natural forces.
+Electromagnetic Coherer	2	tech	1				permanent		0			Electromagnetism			energy_max	820					tech	1					This primitive radio signal detector allows simple messages to be sent great distances through the air.
+Crystal Receiver	3	tech	1				permanent		0			Electromagnetic Coherer			crit_chance	3					tech	1					A more advanced radio signal receiver allowing reception of more complex messages at greater distances.
+Electronic Oscillator	4	tech	1				permanent		0			Crystal Receiver			manpower_rate	160		energy_max	820		tech	1					This signal generating device enables more powerful radio transmissions, and underlies many further advances.
+Electronics	5	tech	1				permanent		0			Electronic Oscillator			attack_manpower	12					tech	1					An understanding of how to manipulate electrons, so as to control machinery or quickly transmit and process information.
+Elementary Computer	6	tech	1				permanent		0			Electronics			xp_multiplier	16		salvage_value	5		tech	1					A basic information processing device that promises to be very useful in both warfare and research.
+Digital Communication	7	tech	1				permanent		0			Elementary Computer			hp_restore	12		geo_efficiency	1		tech	1					Rapid, automated, high bandwidth communication allows for the manipulation of vast amounts of information.
+Advanced Chemistry	8	tech	1				permanent		0			Digital Communication			manpower_max	3750		energy_rate	145		tech	1					Advanced methods and techniques for manipulating chemicals in useful ways.
+Advanced Materials	9	tech	1				permanent		0			Advanced Chemistry			hp_per_square	4		energy_max	1640		tech	2					Techniques for mass producing useful advanced materials, such as carbon nanotubes and superconducting ceramics.
+Advanced Computer	10	tech	1				permanent		0			Advanced Materials			manpower_max	7500		crit_chance	4		tech	1					Extraordinarily high speed computer technology pushing the edge of the quantum speed barrier.
+Artificial Intelligence	11	tech	1				permanent		0			Advanced Computer			attack_manpower	10		hp_restore	12		tech	2					By examining how memory and motivation are implemented in the brain, we learn how to imbue computers with human-like intelligence.
+Nanotechnology	12	tech	1				permanent		0			Artificial Intelligence			hp_restore	12		xp_multiplier	16		salvage_value	10					Techniques for building machinery at the nanometer scale, useful for the development of computer and medical technology.
+Cold Fusion Power Source	13	tech	1				permanent		0			Nanotechnology			energy_rate	145		energy_max	1640		tech	1					Using radio waves as a catalyst, we learn to bypass the Coulomb barrier, allowing us to generate massive amounts of energy from common elements such as nickel.
+Interdimensional Gate	14	tech	1				permanent		0			Cold Fusion Power Source	Interdimensional Portal		manpower_max	7500		energy_max	1640		tech	1					By using interdimensional gateways, we're able to move people, weapons and energy between extradimensional planes.
+Teleportation	15	tech	1				permanent		0			Interdimensional Gate			geo_efficiency	2		attack_manpower	5		tech	1					The use of interdimensional gateways to move our forces and resources rapidly from one position to another.
+Zero Point Power Source	16	tech	1				permanent		0			Teleportation			energy_rate	145		energy_max	1640		tech	1					By effectively splitting time itself, near unlimited energy can be drawn from the very quantum vacuum of empty space.
+Chemical Energy Storage	17	tech	1				permanent		0			Electromagnetism			energy_rate	145		energy_max	1640		tech	1					A mastery of chemical reactions allows us to store both heat and electrical energy in specialized chemical compounds.
+Radar	18	tech	3				permanent		0			Electronics			hp_per_square	8		crit_chance	4		tech	1					A Technology capable of detecting enemy aircraft at a distance, and tracking our own aircraft.
+Broadband Multiplexing	19	tech	3				permanent		0			Digital Communication			manpower_rate	160		max_alliances	1		tech	1					By combining a large number of high bandwidth signals in a single stream, we're able to transmit vast quantities of information at high speed.
+Heavy Explosives	20	tech	3				permanent		0			Advanced Chemistry			wall_discount	10		structure_discount	15		crit_chance	4					Mastering the ability to synthesize and safely handle explosive chemical compunds with very high energy density.
+Laser	25	tech	3				permanent		0			Advanced Materials			energy_rate	145		crit_chance	3		tech	1					A highly focused beam of light capable of cutting steel or communicating information.
+Rocketry	21	tech	3				permanent		0			Chemistry			attack_manpower	10					tech	1					Chemical fuels combined with advanced guidance systems allow us to transport craft across the sky at enormous speeds.
+Solid Fuel	22	tech	3				permanent		0			Rocketry			energy_rate	145		energy_max	1640		tech	1					Safer, denser chemical energy storage solutions allow for improvements in rocketry, weapons, and transportation.
+Guided Missile	23	tech	3				permanent		0			Solid Fuel	Elementary Computer		hp_per_square	8					tech	1					Computerized remote guidance systems allow rockets to home in on their target with great precision.
+Artificial Satellite	24	tech	3				permanent		0			Guided Missile			hp_per_square	8		attack_manpower	14		tech	1					An orbiting device launched by rocket and capable of carrying weapons or sensors.
+Anti-Ballistic Armor	31	tech	3				permanent		0			Advanced Materials			hp_per_square	8					tech	1					New materials allow projectile force to be absorbed and dispersed much more effectively.
+General Relativity	26	tech	5				permanent		0			Electromagnetism			manpower_rate	160		max_alliances	1		tech	1					An understanding of the relationships between time, space, energy and gravity open up myriad possible applications.
+Quantum Mechanics	27	tech	5				permanent		0			General Relativity			manpower_max	7500		xp_multiplier	16		tech	1					By understanding how matter and energy work at the smallest scales, we are able to exploit them much more effectively.
+Nuclear Fission	28	tech	5				permanent		0			Quantum Mechanics			manpower_rate	160		energy_rate	145		tech	1					A sustained chain reaction of splitting atomic nucei releases a torrent of energy, to be harnessed or else unleashed.
+Nuclear Fusion	29	tech	5				permanent		0			Nuclear Fission			energy_rate	145		energy_max	1640		tech	1					Contained nuclear fusion, capable of producing enormous amounts of energy with little environmental damage.
+Depleted Uranium	30	tech	5				permanent		0			Nuclear Fusion			hp_per_square	8		crit_chance	4		tech	1					A byproduct of uranium nuclear fuel enrichment, this extremely dense metal is useful for both weapons and armor.
+Nanorobotics	32	tech	7				permanent		0			Nanotechnology			hp_restore	12		manpower_rate	320		attack_manpower	25					Using advanced nanotechnology we develop tiny autonomous robots capable of cooperating to perform all kinds of tasks.
+Cybernetic Intelligence Enhancement	33	tech	7				permanent		0			Nanorobotics			xp_multiplier	16		simultaneous_actions	1		tech	2					Super-intelligent human beings created through cybernetic neural enhancements, employing our advanced nanotechnology.
+Cybanthropic Merge	34	tech	7				permanent		0			Cybernetic Intelligence Enhancement		30	attack_manpower	10		manpower_rate	320		total_defense	1					A final joining of man and machine, becoming one through precise nanoscale simulation of the living brain.
+Cybanthropic War Machines	35	tech	7				permanent		0			Cybanthropic Merge			manpower_rate	320		manpower_max	7500		tech	2					Devastatingly powerful entities. Heavily armed, armored and shielded, these behemoths are capable of walking or flying. Neither man nor machine, they are both.
+Steel Construction	36	tech	7				permanent		0			Chemistry			hp_restore	12		structure_discount	10		tech	1					Steel frames allow for the construction of structures that are much larger and stronger than any that we could build before.
+Reinforced Concrete	37	tech	7				permanent		0			Steel Construction			hp_per_square	8		manpower_max	7500		tech	1					By casting flexible steel reinforcements within concrete, enormous structures can be built, ranging from walls and bridges to factories and skyscrapers.
+Advanced Gunpowder	38	tech	9				permanent		0			Steel Construction			attack_manpower	10		max_alliances	1		tech	1					Compact explosive chemical compounds that can be used to launch projectiles at great speeds.
+Small Arms	39	tech	9				permanent		0			Advanced Gunpowder			attack_manpower	10					tech	1					Small devices such as muskets and pistols, capable of launching deadly bullets and of being wielded by a single person.
+Proximity Fuse	40	tech	9				permanent		0			Small Arms			hp_per_square	4					tech	1					The ability to trigger an explosize device at a partcular distance from its target has uses ranging from artillary shelling to antiaircraft defenses.
+Nuclear Power Source	41	tech	9				permanent		0			Nuclear Fission			energy_rate	145		energy_max	1640		tech	1					Nuclear reactions used to generate electrical power from small amounts of fuel, but creating radioactive waste as a by-product.
+Advanced Mechanics	42	tech	9				permanent		0			Electromagnetism			hp_restore	12		wall_discount	10		tech	1					Techniques allowing for the creation of very fine and precise mechanical instruments.
+Internal Combustion	43	tech	9				permanent		0			Advanced Mechanics			manpower_max	7500		energy_rate	145		tech	1					A controlled processes of repeated explosions that can be used to drive all kinds of machinery, with applications including manufacturing and transportation.
+Railroad	44	tech	9				permanent		0			Internal Combustion			hp_restore	12		attack_manpower	10		tech	1					A method of transporting people and cargo great distances using engine driven cars on permanent tracks.
+Automobile	45	tech	9				permanent		0			Railroad			manpower_rate	320		geo_efficiency	2		tech	1					Small scale motorized transportation devices, capable of traversing rugged terrain.
+Mechanized Warfare	46	tech	9				permanent		0			Automobile			attack_manpower	10		manpower_max	7500		tech	1					Mobile warfare tactics that employ tanks, armored vehicles and aircraft.
+### Tech Units																											
+Wall	47	tech	10		TRUE		permanent		0															Wall			
+Wall II	48	tech	10				permanent		0			Steel Construction		10	hp_per_square	8								Wall II			
+Wall III	49	tech	10				permanent		0			Reinforced Concrete	Wall II	20							tech	1		Wall III			
+Plasma Screen	50	tech	10				permanent		0			Electromagnetism	Wall III	30										Plasma Screen			
+Plasma Screen II	51	tech	10				permanent		0			Quantum Mechanics	Plasma Screen	40										Plasma Screen II			
+Plasma Screen III	52	tech	10				permanent		0			Advanced Materials	Plasma Screen II	50	energy_max	1640					tech	1		Plasma Screen III			
+Void Dam	53	tech	6				permanent		0			Interdimensional Gate		60										Void Dam	Wall		
+Void Dam II	54	tech	6				permanent		0			Teleportation	Void Dam	70										Void Dam II			
+Void Dam III	55	tech	6				permanent		0			Zero Point Power Source	Void Dam II	80							tech	1		Void Dam III			
+Cannon	56	tech	10		TRUE		permanent		0															Cannon			
+Cannon II	57	tech	10				permanent		0			Steel Construction		5										Cannon II			
+Cannon III	58	tech	10				permanent		0			Advanced Gunpowder	Cannon II	15							tech	1		Cannon III			
+Artillery Battery	59	tech	10				permanent		0			Proximity Fuse	Cannon III	25										Artillery Battery			
+Artillery Battery II	60	tech	10				permanent		0			Depleted Uranium	Artillery Battery	35										Artillery Battery II			
+Artillery Battery III	61	tech	10				permanent		0			Heavy Explosives	Artillery Battery II	45							tech	1		Artillery Battery III			
+Rocket Launcher	62	tech	10				permanent		0			Rocketry	Artillery Battery III	55										Rocket Launcher	Cannon		
+Rocket Launcher II	63	tech	10				permanent		0			Solid Fuel	Rocket Launcher	65	manpower_max	7500								Rocket Launcher II			
+Rocket Launcher III	64	tech	10				permanent		0			Guided Missile	Rocket Launcher II	75	manpower_rate	320					tech	1		Rocket Launcher III			
+Fuel Tank	65	tech	8				permanent		0			Chemical Energy Storage		5										Fuel Tank			
+Fuel Tank II	66	tech	10				permanent		0			Nuclear Power Source		20										Fuel Tank II			
+Fuel Tank III	67	tech	4				permanent		0			Cold Fusion Power Source		50							tech	1		Fuel Tank III			
+Radio Tower	68	tech	2				permanent		0			Electromagnetic Coherer												Radio Tower			
+Radio Tower II	69	tech	2				permanent		0			Crystal Receiver	Radio Tower	8	hp_restore	12								Radio Tower II			
+Radio Tower III	70	tech	2				permanent		0			Electronic Oscillator	Radio Tower II	18							tech	1		Radio Tower III			
+SatCom Command	71	tech	6				permanent		0			Artificial Satellite	Radio Tower III	28	manpower_rate	320								SatCom Command			
+SatCom Command II	72	tech	6				permanent		0			Digital Communication	SatCom Command	38										SatCom Command II			
+SatCom Command III	73	tech	6				permanent		0			Broadband Multiplexing	SatCom Command II	48	hp_restore	12					tech	1		SatCom Command III			
+Autonomous War Base	74	tech	10				permanent		0			Elementary Computer		58	manpower_rate	320								Autonomous War Base	Radio Tower		
+Autonomous War Base II	75	tech	10				permanent		0			Advanced Computer	Autonomous War Base	68	hp_per_square	8								Autonomous War Base II			
+Autonomous War Base III	76	tech	10				permanent		0			Artificial Intelligence	Autonomous War Base II	78	manpower_max	7500					tech	1		Autonomous War Base III			
+Guided Missile Station	77	tech	10				permanent		0			Guided Missile		22										Guided Missile Station			
+Guided Missile Station II	78	tech	10				permanent		0			Advanced Materials	Guided Missile Station	42										Guided Missile Station II			
+Guided Missile Station III	79	tech	10				permanent		0			Advanced Computer	Guided Missile Station II	62							tech	1		Guided Missile Station III			
+Nanobot Swarm Base	80	tech	10				permanent		0			Nanorobotics												Nanobot Swarm Base			
+Nanobot Swarm Base II	81	tech	10				permanent		0			Cybanthropic Merge	Nanobot Swarm Base	54	hp_restore	12								Nanobot Swarm Base II			
+Nanobot Swarm Base III	82	tech	10				permanent		0			Cybanthropic War Machines	Nanobot Swarm Base II	64	hp_per_square	8		attack_manpower	8		tech	1		Nanobot Swarm Base III			
+Dead Hand	83	tech	10				permanent		0			Elementary Computer	Nuclear Fission											Dead Hand			
+Dead Hand II	84	tech	10				permanent		0			Nuclear Fusion	Dead Hand	31										Dead Hand II			
+Dead Hand III	85	tech	10				permanent		0			Advanced Computer	Dead Hand II	41							tech	1		Dead Hand III			
+Geographic Wipe	86	tech	4				permanent		0			Interdimensional Gate		51										Geographic Wipe			
+Geographic Wipe II	87	tech	4				permanent		0			Teleportation	Geographic Wipe	61										Geographic Wipe II			
+Geographic Wipe III	88	tech	4				permanent		0			Zero Point Power Source	Geographic Wipe II	71							tech	1		Geographic Wipe III			
+### Bio Advances																											
+Biology	89	bio	1				permanent		0						hp_restore	6		manpower_rate	100								A basic understanding of living systems.
+Advanced Horticulture	90	bio	1				permanent		0			Biology			manpower_max	7500					bio	1					Improved knowledge and techniques for working with plants allow us to modify their growth to fit our needs.
+Advanced Grafting	91	bio	1				permanent		0			Advanced Horticulture			manpower_rate	350		energy_max	1640		bio	2					Methods of grafting parts from different plants let us combine their strengths while eliminating their weaknesses.
+Cross Breeding	92	bio	1				permanent		0			Advanced Grafting			hp_restore	6		manpower_max	7500		attack_manpower	4					Advanced techniques for selectively breeding animals allow us to manipulate their evolution in the directions we choose.
+Biochemistry	93	bio	1				permanent		0			Cross Breeding			energy_rate	145		energy_max	1640		bio	1					A basic understanding of the chemical processes of life.
+Genomics	94	bio	1				permanent		0			Biochemistry			manpower_max	7500		max_alliances	1		bio	1					By cataloguing the genes that make up life, and understanding how they interact, we make great strides in both medicine and directed evolution. 
+Genetic Engineering	95	bio	1				permanent		0			Genomics			hp_restore	6		hp_per_square	8		bio	2					Methods of manipulating the genetic code allow us to program the structure and behavior of living creatures, to alter their designs to fit our needs.
+Organic Computer	96	bio	1				permanent		0			Genetic Engineering			hp_restore	12		manpower_rate	700		bio	1					A rudimentary computing device grown out of living plant matter.
+Gene Programming	97	bio	1				permanent		0			Organic Computer			attack_manpower	8		energy_max	1640		manpower_rate	600					The ability to design whole genomes from scratch allows us to create new lifeforms with limitless applications in energy, medicine, construction and combat.
+Airborne Propagation	98	bio	1				permanent		0			Gene Programming			geo_efficiency	2					bio	1					Microscopic living creatures of our own design can be spread through the air.
+Enhanced Contagion	99	bio	1				permanent		0			Airborne Propagation			crit_chance	3					bio	1					Genetic manipulation allows us to maximize the damage that custom pathogens do to our enemies.
+Advanced Biochemistry	100	bio	1				permanent		0			Enhanced Contagion			hp_restore	12		energy_max	1640		salvage_value	5					A complete understanding of the chemical processes that make up living cells opens up new possibilities for the creation and manipulation of lifeforms.
+Exobiology	101	bio	1				permanent		0			Advanced Biochemistry			manpower_max	7500		energy_rate	145		bio	1					The study of extraterrestrial artifacts gives us an understanding of exotic types of living systems that originate in other realms.
+Bacterial Fabrication	102	bio	1				permanent		0			Exobiology			hp_restore	12		energy_max	1640		salvage_value	10					The ability to design and fabricate new forms of bacteria. Directed to work together in vast numbers they are capable of enormous feats of creation or destruction.
+Hardened Vegetation	103	bio	1				permanent		0			Bacterial Fabrication			hp_per_square	8		attack_manpower	8		bio	1					Custom engineered vegetation quickly builds its own tough armor to protect our troops and structures.
+Organic Transmutation	104	bio	1				permanent		0			Hardened Vegetation			manpower_max	7500		energy_rate	145		bio	1					Genetically programmed cell organelles catalyze reactions that lead to nuclear transmutation and an abundant release of harnessable energy.
+Abundant Growth	105	bio	1				permanent		0			Organic Transmutation			hp_per_square	8		manpower_rate	350		bio	1					Advanced horticultural techniques allowing plants to grow at many times their normal rates.
+Biomending	106	bio	1				permanent		0			Abundant Growth			hp_restore	12					bio	1					Our soldiers, structures and vehicles are genetically programmed to rapidly heal themselves.
+Gaia Energy	107	bio	1				permanent		0			Biomending			energy_rate	145		energy_max	1640		bio	2					The ability to tap into the source of life energy shared by all organisms opens up a vast number of applications for this abundant form of energy.
+Pathogen Isolation	108	bio	1				permanent		0			Biology			max_alliances	1					bio	1					Isolating the dangerous pathogens that cause disease allows us to protect ourselves while directing these agents toward our enemies.
+Creeper Toxemia	109	bio	1				permanent		0			Advanced Grafting			attack_manpower	4		manpower_rate	350		bio	1					We develop tough, rapidly growing vines that are toxic and corrosive to the touch, perfect for growing invasive weapons..
+Specialized Rhizobia	110	bio	1				permanent		0			Cross Breeding			crit_chance	3					bio	1					We've developed custom bacteria that live symbiotically within plant roots, giving them vastly improved capabilities.
+Invasive Roots	111	bio	1				permanent		0			Specialized Rhizobia			hp_per_square	8					bio	1					Deep, thick roots that grow beneath enemy territory and then collapse, heaving the earth and bringing chaos and destruction.
+Mustard Gas	112	bio	1				permanent		0			Biochemistry			hp_per_square	4					bio	1					This highly cytotoxic tissue vesicant is capable of clearing battlefields of enemy troops. 
+Nerve Agents	113	bio	1				permanent		0			Mustard Gas			hp_restore	6					bio	1					A toxic, quick killing chemical that speads rapidly over a battlefield.
+Phosgene	114	bio	1				permanent		0			Nerve Agents			hp_per_square	4					bio	1					A devestatingly effective chemical agent.
+Bioaerosol	115	bio	1				permanent		0			Phosgene			crit_chance	3					bio	1					A method of delivering airborne pathogens to our enemy's forces.
+Bioengineered Disease	116	bio	1				permanent		0			Bioaerosol			crit_chance	3					bio	1					Custom engineered pathogens allow us to infect our enemies while enjoying immunity for ourselves.
+Metabolic Manipulation	117	bio	1				permanent		0			Advanced Horticulture			hp_restore	12		manpower_max	7500		salvage_value	5					The ability to manipulate how plants and animals process energy opens up many possibilities ranging from hibernation to enhanced speed.
+Accelerated Photosynthesis	118	bio	1				permanent		0			Metabolic Manipulation			hp_per_square	4		attack_manpower	8		bio	1					Custom engineered improvements to the photosynthetic process allows plants to harvest far more energy from light than they can naturally.
+Rapid Propagation	119	bio	1				permanent		0			Accelerated Photosynthesis			hp_per_square	4		attack_manpower	8		manpower_rate	350					Techniques that allow plants to grow and reproduce many times faster than normal.
+Photosynthetic Power Source	120	bio	1				permanent		0			Rapid Propagation			energy_rate	145		energy_max	1640		bio	2					The ability to leverage enhanced photosythesis to provide for all of our nation's energy needs.
+Gene Therapy	121	bio	3				permanent		0			Gene Programming			manpower_max	7500		xp_multiplier	16		bio	2					The ability to modify the genes of a living organism, to defend against disease or otherwise modify the body.
+Human Photosynthesis	122	bio	3				permanent		0			Gene Therapy			hp_per_square	8		manpower_rate	350		bio	1					A technique allowing human cells to derive energy photosynthetically, practically eliminating the need to feed our citizens and soldiers.
+Sentient Plants	123	bio	3				permanent		0			Advanced Biochemistry			xp_multiplier	16		manpower_rate	350		bio	1					Highly manipulated flora imbued with consciousness.
+Exogenetics	124	bio	3				permanent		0			Exobiology			attack_manpower	6		energy_rate	145		bio	1					An understanding of extraterrestrial genetics allows us to combine unearthy biological methods with our own plants and animals.
+Hybrid Exobiology	125	bio	3				permanent		0			Exogenetics			manpower_rate	350		manpower_max	7500		bio	1					By combining aspects of extraterrestrial biology with our own bodies, we are able to imbue ourselves with unimaginable powers.
+Grown Dwellings	126	bio	3				permanent		0			Hardened Vegetation			hp_per_square	8		energy_max	1640		bio	1					Dwellings, factories, and other large and complex structures, grown as plants.
+Bioengineered Food	127	bio	3				permanent		0			Abundant Growth			hp_restore	12		manpower_rate	350		bio	1					By custom engineering the genetics of our own food sources, we are able to produce abundant food that provides supplemental energy and extends lifespan.
+Behavioral Botany	128	bio	3				permanent		0			Sentient Plants			attack_manpower	8		crit_chance	3		bio	1					We learn to control and modify the behavior of our engineered sentient plants.
+Intelligent Plants	129	bio	3				permanent		0			Behavioral Botany			hp_restore	12		manpower_rate	350		bio	2					We are able to develop plants capable of human-like intelligence, which allows us to rapidly grow our labor and fighting forces.
+Sentient Virus	130	bio	3				permanent		0			Abundant Growth	Sentient Plants		manpower_rate	350		xp_multiplier	16		manpower_rate	350					By imbuing viruses with basic sentience, we are able to exploit the potential of these microscopic agents, who can invade enemy cells and machines.
+Neuroharmonics	131	bio	3				permanent		0			Sentient Virus			attack_manpower	8		energy_rate	145		bio	2					By mastering the code in which living matter interfaces with intelligence, we learn to control, enhance or disrupt the minds of others.
+Brainwave Manipulation	132	bio	3				permanent		0			Neuroharmonics			xp_multiplier	16		simultaneous_actions	1		bio	1					Techniques to increase the speed and learning capabilities of our minds, or to implant thoughts in the minds of our enemies.
+Brainwave Disruption	133	bio	3				permanent		0			Brainwave Manipulation		25	crit_chance	3		total_defense	1		bio	1					Neuroharmonic disruption allows us to disconnet our enemies' forces from their own intelligence, rendering them harmless.
+### Bio Units																											
+Hedge	134	bio	10				permanent		0			Advanced Horticulture												Hedge			
+Hedge II	135	bio	10				permanent		0			Metabolic Manipulation	Hedge	10										Hedge II			
+Hedge III	136	bio	10				permanent		0			Accelerated Photosynthesis	Hedge II	20							bio	1		Hedge III			
+Strangling Vines	137	bio	10				permanent		0			Rapid Propagation	Hedge III	30										Strangling Vines			
+Strangling Vines II	138	bio	10				permanent		0			Advanced Grafting	Strangling Vines	40	hp_per_square	8								Strangling Vines II			
+Strangling Vines III	139	bio	10				permanent		0			Creeper Toxemia	Strangling Vines II	50	attack_manpower	8					bio	1		Strangling Vines III			
+Root Barricade	140	bio	10				permanent		0			Invasive Roots	Strangling Vines III	60										Root Barricade	Hedge		
+Root Barricade II	141	bio	10				permanent		0			Genetic Engineering	Root Barricade	70	hp_restore	12								Root Barricade II			
+Root Barricade III	142	bio	10				permanent		0			Gene Programming	Root Barricade II	80	structure_discount	15		wall_discount	10		bio	1		Root Barricade III			
+Pestilence Launcher	143	bio	9				permanent		0			Pathogen Isolation												Pestilence Launcher			
+Toxic Mist Launcher	144	bio	9				permanent		0			Mustard Gas	Pestilence Launcher	12										Toxic Mist Launcher			
+Toxic Mist Launcher II	145	bio	9				permanent		0			Nerve Agents	Toxic Mist Launcher	22										Toxic Mist Launcher II			
+Toxic Mist Launcher III	146	bio	9				permanent		0			Phosgene	Toxic Mist Launcher II	32							bio	1		Toxic Mist Launcher III			
+Pestilence Launcher II	147	bio	9				permanent		0			Airborne Propagation	Toxic Mist Launcher III	42										Pestilence Launcher II			
+Pestilence Launcher III	148	bio	9				permanent		0			Enhanced Contagion	Pestilence Launcher II	52							bio	1		Pestilence Launcher III			
+Pathogen Spore Launcher	149	bio	9				permanent		0			Bioaerosol	Pestilence Launcher III	62										Pathogen Spore Launcher			
+Pathogen Spore Launcher II	150	bio	9				permanent		0			Bioengineered Disease	Pathogen Spore Launcher	72										Pathogen Spore Launcher II			
+Pathogen Spore Launcher III	151	bio	9				permanent		0			Bacterial Fabrication	Pathogen Spore Launcher II	82							bio	1		Pathogen Spore Launcher III			
+Tree Summoner	152	bio	10				permanent		0			Sentient Plants		13	manpower_max	7500		structure_discount	5					Tree Summoner			
+Tree Summoner II	153	bio	10				permanent		0			Behavioral Botany	Tree Summoner	23	manpower_rate	320		structure_discount	5					Tree Summoner II			
+Tree Summoner III	154	bio	10				permanent		0			Intelligent Plants	Tree Summoner II	33	hp_per_square	8		wall_discount	5		bio	1		Tree Summoner III			
+Roots of Despair	155	bio	10				permanent		0			Hardened Vegetation		43	geo_efficiency	3		wall_discount	5					Roots of Despair			
+Roots of Despair II	156	bio	10				permanent		0			Organic Transmutation	Roots of Despair	53	energy_rate	145		structure_discount	5					Roots of Despair II			
+Roots of Despair III	157	bio	10				permanent		0			Abundant Growth	Roots of Despair II	63	energy_max	1640		wall_discount	10		bio	1		Roots of Despair III			
+Agro Colony	158	bio	8				permanent		0			Biology			attack_manpower	4								Agro Colony			
+Agro Colony II	159	bio	8				permanent		0			Advanced Horticulture	Agro Colony	15	energy_rate	145								Agro Colony II			
+Agro Colony III	160	bio	8				permanent		0			Genetic Engineering	Agro Colony II	30	attack_manpower	8		energy_max	1640		bio	1		Agro Colony III			
+Hydroponic Garden	161	bio	8				permanent		0			Gene Programming	Agro Colony III	45	energy_rate	145								Hydroponic Garden			
+Hydroponic Garden II	162	bio	8				permanent		0			Organic Transmutation	Hydroponic Garden	60	manpower_max	7500								Hydroponic Garden II			
+Hydroponic Garden III	163	bio	8				permanent		0			Abundant Growth	Hydroponic Garden II	75	manpower_rate	320					bio	1		Hydroponic Garden III			
+Toxic Chemical Dump	164	bio	2				permanent		0			Mustard Gas												Toxic Chemical Dump			
+Toxic Chemical Dump II	165	bio	2				permanent		0			Nerve Agents	Toxic Chemical Dump	15										Toxic Chemical Dump II			
+Toxic Chemical Dump III	166	bio	2				permanent		0			Phosgene	Toxic Chemical Dump II	25							bio	1		Toxic Chemical Dump III			
+Supervirus Contagion	167	bio	10				permanent		0			Enhanced Contagion		35										Supervirus Contagion			
+Supervirus Contagion II	168	bio	10				permanent		0			Exobiology	Supervirus Contagion	45										Supervirus Contagion II			
+Supervirus Contagion III	169	bio	10				permanent		0			Sentient Virus	Supervirus Contagion II	55							bio	1		Supervirus Contagion III			
+Brainsweeper	170	bio	10				permanent		0			Neuroharmonics												Brainsweeper			
+Brainsweeper II	171	bio	10				permanent		0			Brainwave Manipulation	Brainsweeper	36	max_alliances	1								Brainsweeper II	Brainsweeper		
+Brainsweeper III	172	bio	10				permanent		0			Brainwave Disruption	Brainsweeper II	56							bio	1		Brainsweeper III	Brainsweeper II		
+### Psi Advances																											
+Seed Illusion	173	psi	1				permanent		0						manpower_max	7500		energy_rate	70		psi	1					Using visualization techniques, we gain the ability to plant illusions in the minds of others, useful for tricking the enemy's troops, and motivating our own.
+Short Range Telekinesis	174	psi	1				permanent		0			Seed Illusion			attack_manpower	8		crit_chance	3		manpower_rate	160					Methods allowing us to use our minds to manipulate objects.
+Piezoetheric Induction	175	psi	1				permanent		0			Short Range Telekinesis			energy_rate	170		energy_max	1640		psi	2					Using natural minerals as a conduit we discover how to harness etheric energy.
+Crystal Resonance	176	psi	1				permanent		0			Piezoetheric Induction			manpower_rate	160		energy_max	1640		psi	1					The resonant frequencies of crystals allow us to amplify etheric energy and so produce with it much more powerful psychic effects.
+Lattice Frequency Tuning	177	psi	1				permanent		0			Crystal Resonance			hp_per_square	8		energy_rate	170		psi	1					By building crystalline structures with precise combinations of lattice geometry, we're able to much more precisely control the psychic effects we produce.
+Torsion Field Energy	178	psi	1				permanent		0			Lattice Frequency Tuning			energy_rate	170		structure_discount	15		psi	1					By harnessing the torsion energy fields connecting all points in the universe, we make rapid advances in psychic communication and energy production.
+Vortex Harmonics	179	psi	1				permanent		0			Torsion Field Energy			energy_rate	170		energy_max	1640		salvage_value	5					Using harmonics to interface with the vortices of torsion energy that are an integral part of living beings and the planet itself, we open up vast new possibilities.
+Astral Summons	180	psi	1				permanent		0			Vortex Harmonics			hp_per_square	10		manpower_rate	160		psi	1					Through communication with the astral realms, we are able to rally armies of otherworldly beings to our cause.
+Astral Gate	181	psi	1				permanent		0			Astral Summons			attack_manpower	8		energy_max	1640		psi	1					Using torsion energy techniques to open gateways to the astral realm, extradimensional beings can pass through to the material plane to fight for us.
+Ectoplasmic Materialization	182	psi	1				permanent		0			Astral Gate			hp_per_square	8		manpower_rate	320		psi	2					Etheric energy that passes through from the astral realm takes the form of ectoplasm, which can be manipulated by astral beings, to use as weapons against our enemies.
+Astral Navigation	183	psi	1				permanent		0			Ectoplasmic Materialization			energy_max	1640		geo_efficiency	4		psi	1					By moving through the astral realms, our navigators are able to transport warriors and resources across space instantly.
+Electroetheric Discharge	184	psi	1				permanent		0			Astral Navigation			hp_restore	12		wall_discount	10		psi	1					Our navigators learn to retrieve enormous quantities of energy from the astral realms, which is passed back through an astral gate with a thuderous discharge.
+Mass Telepathy	185	psi	1				permanent		0			Electroetheric Discharge			xp_multiplier	16		attack_manpower	8		psi	1					Using electroetheric energy we are able to supercharge telepathic transmission, projecting precise thoughts into thousands of minds at once.
+Ectenic Force Control	186	psi	1				permanent		0			Mass Telepathy			hp_per_square	10		manpower_rate	320		psi	1					By learning to take control of the ectenic force that underlies ectoplasmic phenomena, we no longer need rely on the cooperation of astral entities to use it.
+Interdimensional Portal	187	psi	1				permanent		0			Ectenic Force Control			energy_rate	170		energy_max	1640		psi	1					Fine control of astral gateway techniques allows us to open paths into nearby spatial dimensions, rather than just astral realms. 
+Arcane Strike	188	psi	1				permanent		0			Interdimensional Portal			crit_chance	3		manpower_rate	320		psi	1					Arcane energy discharges can now be targeted very precisely in space.
+Thoughtform Amplification	189	psi	1				permanent		0			Arcane Strike			hp_restore	15		simultaneous_actions	1		salvage_value	10					Methods of amplifying thoughtform projection allows visualized creations to manifest in reality much more rapidly.
+Advanced Materialization	190	psi	1				permanent		0			Thoughtform Amplification			hp_per_square	8		attack_manpower	8		psi	1					Much more complex creations are able to be materialized through ecstatic visualization, allowing us to alter ourselves and other lifeforms.
+Arcane Bolt	191	psi	1				permanent		0			Advanced Materialization			energy_rate	340		energy_max	1640		psi	1					Powerful directed bolts of amplified energy can now be directed at enemy forces. 
+Protracted Manifestation	192	psi	1				permanent		0			Arcane Bolt			hp_restore	15		attack_manpower	8		psi	1					Our created maniestations are no longer temporary, but may now be protracted or even permanent.
+Telekinetic Stasis	193	psi	1				permanent		0			Short Range Telekinesis			hp_restore	15		attack_manpower	8		psi	1					We develop methods for using telekinesis to slow and even stop time temporarily within an area, holding its occupants in stasis.
+Aerokinesis	194	psi	1				permanent		0			Piezoetheric Induction	Telekinetic Stasis		geo_efficiency	3		structure_discount	10		psi	1					Telekinetic force used to manipulate air itself, leading to airborne travel and advanced weapons and construction techniques.
+Psychic Rebound Shield	195	psi	1				permanent		0			Aerokinesis			hp_per_square	10		crit_chance	3		psi	1					A protective psychic field that rebounds the negative attack back at the attacker.
+Telekinetic Armor	196	psi	1				permanent		0			Psychic Rebound Shield			hp_restore	15		wall_discount	15		psi	1					A deflective aura surrounding our soldiers that telekinetically repels projectiles, weapons, and flames.
+Mass Telekinesis	197	psi	1				permanent		0			Telekinetic Armor			hp_per_square	16		energy_max	1640		psi	1					The ability to combine the telekinetic powers of many people, to allow huge objects to be moved, and hurled with great force.
+Major Force of Will	198	psi	1				permanent		0			Crystal Resonance	Mass Telekinesis		hp_restore	15		energy_rate	170		psi	2					An awesome telekinetic energy attack capable of destroying entire cities in an instant.  Too chaotic and powerful to be put to any use other than destruction.
+Amplified Telekinesis	199	psi	1				permanent		0			Major Force of Will			attack_manpower	8		energy_rate	170		hp_per_square	10					Mass telekinesis focused and refined, allow large scale creation and manipulation using telekinetic power.
+Pyromancy	200	psi	1				permanent		0			Lattice Frequency Tuning	Amplified Telekinesis		energy_rate	170		manpower_max	7500		psi	2					Telekinetic methods are developed that allow us to direct all forms of heat, opening new possibilities for energy generation and weaponry.
+Pyrogenics	201	psi	1				permanent		0			Torsion Field Energy	Pyromancy		max_alliances	1		salvage_value	5		psi	1					We learn how to not only control heat, but generate it, making a new source of energy available and allowing more powerful flame weapons.
+Enhanced Pyromancy	202	psi	1				permanent		0			Pyrogenics			energy_max	1640		crit_chance	3		psi	1					Much finer telekinetic control over heat allows more precisely targeted flame weapons.
+Pyrolysis	203	psi	1				permanent		0			Ectoplasmic Materialization	Enhanced Pyromancy		attack_manpower	8		energy_rate	170		psi	1					Much higher temperature telekinetic heat generation allows it to be used to tear apart materials at the molucular level. 
+Advanced Pyrolysis	204	psi	1				permanent		0			Ectoplasmic Illusion	Pyrolysis		hp_restore	12		manpower_max	7500		psi	1					Extremely intense plasma generation rapidly produces a devastating effect over a large area.
+Seed Fear	205	psi	1				permanent		0			Piezoetheric Induction			max_alliances	1		manpower_max	7500		psi	1					The ability to plant fears in the minds of others.
+Ectoplasmosis	206	psi	1				permanent		0			Ectoplasmic Materialization			attack_manpower	8					psi	1					Using the ability to infect others with feelings via contact with ectoplasm, we learn to make enemy trrops feel such deep contentment that they stop fighting.
+Ectoplasmic Illusion	207	psi	1				permanent		0			Ectoplasmosis						manpower_max	7500		psi	1					We've developed a method to transmit not only feelings but illusory thoughts via contact with ectoplasm, allowing us to deceive enemy troops.
+Ectoplasmic Trance	208	psi	1				permanent		0			Ectoplasmic Illusion			max_alliances	1		manpower_max	7500		psi	1					Using ectoplasmic transmission to modify states of consciousness, we can lull our enemies into a trance state in which they're unable to fight.
+Akashic Access	209	psi	1				permanent		0			Interdimensional Portal			xp_multiplier	16		crit_chance	3		psi	1					By making contact with the universe's record of all knowledge, we are able to learn more rapidly and even predict the future.
+Djinn Telepathy	210	psi	1				permanent		0			Thoughtform Amplification						manpower_max	7500		psi	1					We develop the ability to communicate telepathically with Djinn kind, enhancing our ability to deploy these powerful creatures in war.
+Arcane Breeding	211	psi	1				permanent		0			Advanced Materialization			hp_per_square	10		manpower_max	7500		psi	1					By altering our physical nature, we become able to reproduce at a much faster rate.
+Arch Djinn Summons	212	psi	1				permanent		0			Arcane Bolt			manpower_rate	160					psi	1					We gain the ability to coerce the most powerful of the Djinn beings into fighting for us.
+Brobdingnagian Growth	213	psi	1				permanent		0			Protracted Manifestation			hp_restore	15		manpower_rate	320		psi	2					By learning to alter the nature of living beings, we become capable of growing to maturity at an astonishingly fast rates.
+Preternatural Bounty	214	psi	1				permanent		0			Brobdingnagian Growth			hp_restore	15		attack_manpower	8		energy_rate	220					We apply the principles of brobdingnagian growth to our food sources. We can now grow much more food, faster, using less land.
+Mass Illusion	215	psi	1				permanent		0			Piezoetheric Induction			xp_multiplier	16		invisibility	1		psi	1					The ability to deceive thousands of people at once into perceiving an illusion.  Useful in confusing and repelling the enemy.
+Summon Titans	216	psi	1				permanent		0			Astral Navigation			hp_per_square	10		manpower_max	7500		psi	1					The ability to summon mighty behemoths from another plane, to aid us in battle.
+Conjure Horror	217	psi	1				permanent		0			Summon Titans			manpower_rate	320					psi	1					We make contact with the lowest realms of existence, and call forth dark and powerful abominations.
+### Psi Units																											
+Telekinetic Block	218	psi	1				permanent		0			Short Range Telekinesis												Telekinetic Block			
+Telekinetic Block II	219	psi	1				permanent		0			Aerokinesis	Telekinetic Block	8										Telekinetic Block II			
+Telekinetic Block III	220	psi	1				permanent		0			Amplified Telekinesis	Telekinetic Block II	18							psi	1		Telekinetic Block III			
+Pyralisade	221	psi	1				permanent		0			Pyromancy	Telekinetic Block III	28										Pyralisade			
+Pyralisade II	222	psi	1				permanent		0			Pyrogenics	Pyralisade	38										Pyralisade II			
+Pyralisade III	223	psi	1				permanent		0			Enhanced Pyromancy	Pyralisade II	48							psi	1		Pyralisade III			
+Ectochasm	224	psi	1				permanent		0			Ectoplasmic Materialization	Pyralisade III	58										Ectochasm	Telekinetic Block		
+Ectochasm II	225	psi	1				permanent		0			Ectenic Force Control	Ectochasm	68										Ectochasm II			
+Ectochasm III	226	psi	1				permanent		0			Advanced Materialization	Ectochasm II	78	hp_per_square	8					psi	1		Ectochasm III			
+Telekinetic Projector	227	psi	1				permanent		0			Telekinetic Stasis												Telekinetic Projector			
+Telekinetic Projector II	228	psi	1				permanent		0			Mass Telekinesis	Telekinetic Projector	6	geo_efficiency	4								Telekinetic Projector II			
+Telekinetic Projector III	229	psi	1				permanent		0			Major Force of Will	Telekinetic Projector II	16	hp_restore	12					psi	1		Telekinetic Projector III			
+Pyroclasm	230	psi	1				permanent		0			Enhanced Pyromancy	Telekinetic Projector III	26										Pyroclasm			
+Pyroclasm II	231	psi	1				permanent		0			Pyrolysis	Pyroclasm	36										Pyroclasm II			
+Pyroclasm III	232	psi	1				permanent		0			Advanced Pyrolysis	Pyroclasm II	46							psi	1		Pyroclasm III			
+Keraunocon	233	psi	1				permanent		0			Electroetheric Discharge	Pyroclasm III	56										Keraunocon	Telekinetic Projector		
+Keraunocon II	234	psi	1				permanent		0			Arcane Strike	Keraunocon	66										Keraunocon II			
+Keraunocon III	235	psi	1				permanent		0			Arcane Bolt	Keraunocon II	76							psi	1		Keraunocon III			
+Energy Vortex	236	psi	1				permanent		0			Piezoetheric Induction												Energy Vortex			
+Energy Vortex II	237	psi	1				permanent		0			Crystal Resonance	Energy Vortex	15	energy_rate	145								Energy Vortex II			
+Energy Vortex III	238	psi	1				permanent		0			Lattice Frequency Tuning	Energy Vortex II	30	energy_max	1640					psi	1		Energy Vortex III			
+Earth Chakra	239	psi	1				permanent		0			Torsion Field Energy	Energy Vortex III	45	hp_restore	12								Earth Chakra			
+Earth Chakra II	240	psi	1				permanent		0			Vortex Harmonics	Earth Chakra	60	manpower_rate	320								Earth Chakra II			
+Earth Chakra III	241	psi	1				permanent		0			Interdimensional Portal	Earth Chakra II	80	energy_rate	145					psi	1		Earth Chakra III			
+Phantasmic Threat	242	psi	1				permanent		0			Seed Illusion												Phantasmic Threat			
+Phantasmic Threat II	243	psi	1				permanent		0			Seed Fear	Phantasmic Threat	20										Phantasmic Threat II			
+Phantasmic Threat III	244	psi	1				permanent		0			Mass Telepathy	Phantasmic Threat II	40							psi	1		Phantasmic Threat III			
+Hypnotic Inducer	245	psi	1				permanent		0			Ectoplasmosis			manpower_max	7500								Hypnotic Inducer			
+Hypnotic Inducer II	246	psi	1				permanent		0			Ectoplasmic Illusion	Hypnotic Inducer	14	manpower_rate	320								Hypnotic Inducer II			
+Hypnotic Inducer III	247	psi	1				permanent		0			Ectoplasmic Trance	Hypnotic Inducer II	28	xp_multiplier	16					psi	1		Hypnotic Inducer III			
+Temple of Zoth-Ommog	248	psi	1				permanent		0			Conjure Horror		42										Temple of Zoth-Ommog			
+Temple of Zoth-Ommog II	249	psi	1				permanent		0			Thoughtform Amplification	Temple of Zoth-Ommog	56										Temple of Zoth-Ommog II			
+Temple of Zoth-Ommog III	250	psi	1				permanent		0			Protracted Manifestation	Temple of Zoth-Ommog II	70	hp_per_square	8					psi	1		Temple of Zoth-Ommog III			
+Ecto Ray	251	psi	1				permanent		0			Ectoplasmosis												Ecto Ray			
+Ecto Ray II	252	psi	1				permanent		0			Ectoplasmic Illusion	Ecto Ray	9										Ecto Ray II			
+Ecto Ray III	253	psi	1				permanent		0			Ectoplasmic Trance	Ecto Ray II	19							psi	1		Ecto Ray III			
+Djinn Portal	254	psi	1				permanent		0			Interdimensional Portal		29	manpower_rate	320								Djinn Portal			
+Djinn Portal II	255	psi	1				permanent		0			Djinn Telepathy	Djinn Portal	39	energy_max	1640								Djinn Portal II			
+Djinn Portal III	256	psi	1				permanent		0			Arch Djinn Summons	Djinn Portal II	49							psi	1		Djinn Portal III			
+### Tech Purchasables																											
+Recycling	300	tech_buy	100				temporary	3600	20			Chemistry			salvage_value	15											Materials salvaged from old structures can be reprocessed into new materials for re-use, reducing the cost of new structures.
+Defense Architect	301	tech_buy	100				temporary	3600	50			Steel Construction			structure_discount	20											We hire the services of a talented architect capable of designing effective defensive structures.
+Great Dams	302	tech_buy	100				temporary	43200	30			Reinforced Concrete			energy_max_mult	35											The building of great dams with which to generate hydroelectric power.
+Talented Tinkerer	303	tech_buy	100				temporary	3600	30			Advanced Mechanics			xp_multiplier	18											We employ the services of one talented in the invention of useful mechanisms.
+Nonlocal Entanglement	304	tech_buy	100				temporary	43200	70			Quantum Mechanics			geo_efficiency	5											Using quantum effects we are able to communicate and even transport objects over great distances instantaneously.
+Black Market Weaponry	305	tech_buy	100			TRUE	temporary	3600	60			Small Arms			tech_mult	20											A cache of high-powered munitions.
+Radioactive Fallout	306	tech_buy	100				temporary	900	20			Nuclear Fission			splash_damage	18											By attacking with radioactive materials that drift through the atmosphere, damage is spread over great distances.
+Antimatter Shield	307	tech_buy	100				temporary	7200	110			Nuclear Fusion			hp_per_square_mult	10											Antimatter leaked out of a spacetime pocket in a shell-like shape, creating a powerful energy shield to protect our units and territories.
+Computer Prodigy	308	tech_buy	100				temporary	43200	160			Elementary Computer			xp_multiplier	15											A genius with electronics, this individual will help us accelerate the advancement of computer science.
+Ace Pilot	309	tech_buy	100				temporary	3600	40			Mechanized Warfare			crit_chance	15											An ace fighter pilot rallies our fliers and brings victory in the air.
+Rapid Prototyping	310	tech_buy	100				permanent		250			Advanced Chemistry			tech_mult	12											A fast method of gene sequencing capable of speeding genetic research.
+Anagronomy	311	tech_buy	100				permanent		270			Advanced Materials			manpower_max_mult	15											Now able to extract nutrients directly from raw materials, we have no more need for farming.
+Mine Laying Cockroaches	312	tech_buy	100				temporary	3600	140			Nanotechnology			bio_mult	30											Genetically engineered cockroaches capable of infesting enemy territory and laying highly explosive mines underfoot.
+Nanotubule Interface	313	tech_buy	100				permanent		500			Nanorobotics			psi_mult	16											By manipulating the cell structures that interact with psychic energy, we are able to harness psionic abilities.
+Nanobot Bio Repair	314	tech_buy	100				temporary	14400	80			Cybernetic Intelligence Enhancement			manpower_rate_mult	30		hp_restore_mult	12								Intelligent nanobot swarms capable of repairing wounds and rapidly returning our fighters to the front lines.
+Climate Manipulation	315	tech_buy	100				temporary	43200	90			Zero Point Power Source			energy_rate_mult	18											Methods of utilizing zero point energy to improve our own weather and climate, and wrack our enemies with storm or drought.
+### Bio Purchasables																											
+Brilliant Naturalist	350	bio_buy	100				temporary	3600	100			Advanced Horticulture			xp_multiplier	20											We employ the services of a brilliant naturalist who can aid us in our learning.
+Carnivorous Underbrush	351	bio_buy	100				temporary	43200	180			Advanced Grafting			hp_per_square_mult	10											A defensive perimeter of carnivorous plants that will incapacitate and then slowly digest invading troops.
+Metabolic Boost	352	bio_buy	100				temporary	21600	60			Metabolic Manipulation			energy_rate_mult	20											Metabolic acceleration resulting in more rapid energy production.
+Composter Worms	353	bio_buy	100				temporary	3600	10			Cross Breeding			salvage_value	12											Specially bred worms that rapidly decompose our obsolete structures into raw nutrients that can then be efficiently reused.
+Pesticides	354	bio_buy	100				temporary	28800	100			Biochemistry			manpower_rate_mult	25											Chemicals used to kill agricultural parasites, making farms more efficient.
+Mycorrhizal Undernet	355	bio_buy	100				temporary	86400	160			Invasive Roots			geo_efficiency	6											A vast living subterranean network of massive fungal strands that can be used to communicate and transport materials.
+Paralyzing Mosquito	356	bio_buy	100				permanent		70			Genetic Engineering			bio_mult	20											Genetically engineered insects whose bite immediately paralyzes the victim.
+Brewer of Death	357	bio_buy	100				temporary	3600	30			Nerve Agents			crit_chance	12											We hire the services of an expert in the brewing of lethal potions.
+Organic Supercomputer	358	bio_buy	100				permanent		250			Organic Computer			tech_mult	12											A highly advanced computing device grown out of living plant matter.
+Genetically Modified Foods	359	bio_buy	100				permanent		200			Gene Programming			manpower_max_mult	12											New types of food that are healthier, grow faster, and ward off parasites.
+Contagion	360	bio_buy	100			TRUE	temporary	1800	50			Bioengineered Disease			splash_damage	20											A highly infectious genetically engineered pathogen spreads great distances to infect enemy troops over a wide area.
+Guarding Fields	361	bio_buy	100				temporary	36000	60			Sentient Plants			hp_restore_mult	10											Our food crops are given sentience, and actively slow the progress of invading forces, facilitating a counter-attack.
+Bioenergy Storganisms	362	bio_buy	100				temporary	86400	80			Bacterial Fabrication			energy_max_mult	40											Custom fabricated organisms engineered to be capable of storing enormous quantities of energy.
+Arboreal Barrage	363	bio_buy	100				temporary	3600	40			Behavioral Botany			bio_mult	25											Arboreal catapults given much greater accuracy and destructive power by being imbued with conscious awareness.
+Rich Humus	364	bio_buy	100				temporary	3600	30			Grown Dwellings			structure_discount	15											Nutrient-laden organic materials that allow us to grow new structures much more rapidly than normal.
+Bioenergy Conductor	365	bio_buy	100				permanent		700			Neuroharmonics			psi_mult	20											Using materials we obtain that can conduct bioenergy, we are able to access the psychical aspects of living systems. 
+### Psi Purchasables																											
+Energy Vampirism	400	psi_buy	100				permanent		120			Piezoetheric Induction			energy_rate_mult	25											Using esoteric techniques we are able to drain psychic energy from our enemies, and employ it for our own uses.
+Flawless Crystals	401	psi_buy	100				temporary	86400	60			Crystal Resonance			energy_max_mult	30											A supply of flawless crystals allows us to store energy in a more concentrated form.
+Turn Loyalty	402	psi_buy	100				temporary	3600	60			Seed Fear			psi_mult	18											An advanced psionic effect used to make an enemy spy or even leader loyal to our nation.
+Illusory Multitudes	403	psi_buy	100				temporary	36000	140			Mass Illusion			hp_per_square_mult	15											By tricking our enemies into perceiving many more of us than there are, their attacks are directed against thin air and our numbers last much longer.
+Focused Intent	404	psi_buy	100				temporary	28800	120			Lattice Frequency Tuning			manpower_rate_mult	30											By powerfully focusing our intent as a group, we are able to amplify the motivation of our troop to charge into battle.
+Transmutation	405	psi_buy	100				temporary	3600	30			Torsion Field Energy			salvage_value	18											By accessing the deep levels at which matter is merely an illusion, we are able to transform one material to another, allowing the old to be made new again.
+Ancient Scry Stones	406	psi_buy	100				temporary	86400	30			Vortex Harmonics			crit_chance	10											We discover ancient crystal scry stones which we can use to communicate over long distances, and observe our enemys activities.
+Bilocation	407	psi_buy	100				permanent		300			Mass Telekinesis			geo_efficiency	4											Using an arcane technique to split our physical presence among multiple locations simultaneously, communication and transportation becomes much easier.
+Arboreal Ally	408	psi_buy	100				permanent		120			Astral Summons			bio_mult	12											We gain the favor of a powerful and influential tree spirit, who is willing to aid us in defending our territory.
+Psychic Shockwave	409	psi_buy	100				temporary	3600	30			Electroetheric Discharge			splash_damage	15											Our attacks are accompanied by an electroetheric shockwave, inflicting great damage to our enemies over a wide area.
+Mail of Invisibility	410	psi_buy	100				permanent		750			Ectoplasmic Illusion			tech_mult	20											We develop a suit of armor that makes the wearer invisible.
+Hivemind	411	psi_buy	100				temporary	86400	100			Mass Telepathy			manpower_max_mult	30											Mass telepathy gives us the ability to tune all of our minds to the same frequency, sharing thoughts and becoming a single united mind.
+Arcane Healer	412	psi_buy	100				temporary	43200	20			Ectenic Force Control			hp_restore_mult	20											Using psionic method to rapidly heal even greivous wounds, our soldiers are able to return to battle much more quickly.
+Akashic Explorer	413	psi_buy	100				temporary	3600	50			Akashic Access			xp_multiplier	30											Our mages explore the arcane realms of the Akashic Records, bringing back valuable insights that extend our knowledge and wisdom.
+Architectural Manifestation	414	psi_buy	100				temporary	3600	20			Thoughtform Amplification			structure_discount	12											By amplifying their thoughtforms, our architects are able to directly materialize their designs, rapidly and at low cost.
+Summon Leviathan	415	psi_buy	100				temporary	3600	100			Protracted Manifestation			bio_mult	25											The ability to summon a massive winged beast from hidden realms to fight for us in battle.
+### Base Purchasables																											
+Manpower Inspiration	450	base_buy	100				temporary	28800	90					0	manpower_rate_mult	25											A burst of inspired enthusiasm provokes a tremendous increase in our manpower recruitment rate.
+Energy Development	451	base_buy	100				temporary	43200	110					0	energy_rate_mult	20											A concerted effort to develop new energy sources results in a great increase to our energy generation rate.
+Transportation Infrastructure	452	base_buy	100				temporary	43200	80					0	geo_efficiency	4											Investing in a more robust transportation infrastructure makes it much easier to transport people and materials between far flung points in our empire.
+Great Library	453	base_buy	100			TRUE	temporary	1800	40					0	xp_multiplier	25											A marvelous storehouse of knowledge. Access to this library allows our learning to develop at a much faster rate for some time.
+Genius Scientist	454	base_buy	100			TRUE	temporary	28800	120					1	tech_mult	15											A scientist of uncanny genius allows us to advance the state of our technology by leaps and bounds.
+Mine Shipment	455	base_buy	100			TRUE	temporary	3600	60					2	hp_per_square_mult	10											A large shipment of mines, useful for defending our borders from enemy invasions.
+Krynid Army	456	base_buy	100			TRUE	temporary	3600	50					3	bio_mult	18											Seed pods that transform enemy citizens into gargantuan plant-based behemoths called Krynids, capable of wrecking devestating havoc upon the enemy.
+Subterranean Barracks	457	base_buy	100				temporary	28800	70					4	hp_restore_mult	15											An extensive system of subterranean tunnels and bunkers allows our troops to rapidly reinforce areas while remaining out of sight.
+Shamanic Tribe	458	base_buy	100			TRUE	temporary	3600	70					6	psi_mult	20											We ally with a shamanic tribe whose mystical arts give us a powerful advantage over our enemies.
+Charismatic Leader	459	base_buy	100			TRUE	temporary	900	50					8	attack_manpower_mult	30											An inspiring leader rises from our ranks and sets our eyes upon victory. With this leadership, more manpower is devoted to each attack we make.
+Scrap Trader	460	base_buy	100			TRUE	temporary	3600	20					10	salvage_value	10											We work with a well connected scrap trader who is able to barter high quality new material in exchange for our obsolete structures. 
+Cornucopia	461	base_buy	100				temporary	86400	60					12	manpower_max_mult	25											An unusually generous harvest allows us to feed great multitudes, and support much more manpower.
+Gifted Mentalist	462	base_buy	100			TRUE	temporary	28800	120					14	psi_mult	15											We hire the services of a gifted telepath capable of reading the deepest thoughts witrh ease.
+Total Armament	463	base_buy	100				temporary	86400	140					16	hp_per_square_mult	8											Each of our civilians is equipped and trained with small arms, to help repel any attempt at an invasion.
+Refurbished Energy Stores	464	base_buy	100				temporary	86400	40					18	energy_max_mult	20											By investing in maintenence and upgrades for our energy stores, we're able to expand the capacity of our reserves. 
+Guerrilla Warfare	465	base_buy	100				temporary	900	20					20	splash_damage	15											Using paramilitary tactics, we are able to inflect damage on enemy forces over a wide area.
+Bulk Barricade Shipment	466	base_buy	100			TRUE	temporary	3600	10					22	wall_discount	15											A shipment of the raw materials needed to build high quality barricades.
+Master Tactician	467	base_buy	100			TRUE	temporary	3600	40					24	simultaneous_actions	1											A brilliant tactician plans our efforts so effectively that we are able to effectively engage in more battlefronts at one time.
+Remote Viewing	468	base_buy	100				permanent		300					26	crit_chance	10											By mastering techniques of separating their perception from their bodies, our spies are able to pinpoint the vulnerabilities of our enemies.  
+Super Soldier Hero	469	base_buy	100			TRUE	temporary	7200	200					28	tech_mult	15		bio_mult	15		psi_mult	15					An uncanniy talented hero comes forward, capable of leading our soldiers to victory.
+Insurgency	470	base_buy	100				temporary	43200	400					30	insurgency	1											An armed resistence movement doubles the base defense strength of our interior territory.
+### Random Advances																											
+Hermetic Stone Idol	500	none	1			TRUE	temporary	600							psi_mult	30											Our people discover an ancient stone idol. Awestruck by its appearance, and fascinated by its power, we gain a bonus to our naton's psionic ability for a short time.
+Otherworldly Savant	501	none	1			TRUE	temporary	28800							xp_multiplier	50											A mysterious life force briefly appears among our people, imparting to us some knowledge of the worlds outside our own.
+Alien Battle Machine	502	none	1			TRUE	temporary	3600							tech_mult	25											In a mysterious wreckage that appears to be from another world, a working machine of warfare was found.  Its ancient power supply does not allow it to run for long though.
+Disaffected Officer	503	none	1			TRUE	temporary	1800							crit_chance	20											An enemy officer, disaffected by the policies of his nation, has joined us in destroying them.
+Strange Ore	504	none	1			TRUE	temporary	36000							tech_mult	20		credits	90								We have discovered a vein of a strange ore. It seems to have beneficial qualities.
+Radioactive Pathogen	505	none	1			TRUE	temporary	1800							bio_mult	20		manpower_rate_mult	-40								Our forces have been stricken by a radioactive pathogen that severely restricts our ability to build up manpower, but has the advantage of infecting our enemies as well.
+Blind Hermit	506	none	1			TRUE	temporary	1200							attack_manpower_mult	35											Our scouts have located a strange hermit. The tales of his fervent faith give our troops hope, and they will fight much harder.
+Ragged Hermit	507	none	1			TRUE	temporary	1200							attack_manpower_mult	-20											Our scouts have located a strange hermit. The stories they tell of him dishearten the troops, and there has been a rash of fights in the camps.
+Prophet of Glory	508	none	1			TRUE	temporary	36000							manpower_rate_mult	100											A man has comes forth, speaking prophecy. His portents seem to be true however, and as victory comes much easier, the troops are encouraged.
+Prophet of Doom	509	none	1			TRUE	temporary	36000							manpower_rate_mult	-50											A man has come forth, speaking prophecy. His portents of doom and gloom have caused rioting, and troops have abandoned their posts.
+Hidden Weapon Cache	510	none	1			TRUE	temporary	1200							tech_mult	30											Our scouts have reported to the Quartermaster the location of a cache of weapons, of an unknown design.
+Abandoned Keep	511	none	1			TRUE	temporary	1800							structure_discount	35											We have come across an ancient fortress. Despite its age, it's in decent condition, and we can reuse its materials to build our own defenses.
+Treasure Trove	512	none	1			TRUE	temporary	900							wall_discount	35		structure_discount	30		credits	180					Deep in these lands we have discovered hidden riches belonging to a long lost civilization.
+Summoning Circle	513	none	1			TRUE	temporary	600							psi_mult	35											Our mages have discovered a summoning circle, and with little difficulty they have summoned a legion of trans-dimensional warriors to aid our cause.
+Dark Summoning Circle	514	none	1			TRUE	temporary	21600							manpower_rate_mult	-25											Our mages have discovered a summoning circle, but the dark gateway has been left open. And the guardians were hungry.
+Battle Plague	515	none	1			TRUE	temporary	1800							splash_damage	30											Our warriors are stricken by a mysterious illness. With death a certainty, we attack our enemy, infecting them with this plague.
+### Landscape Objects																											
+Iron Deposit	1000	none	1				object								tech	2	10										Iron mining gives us the raw materials to build more technological wonders.
+Ancient Starship Wreckage	1001	none	1				object					Nanotechnology			tech	10	20	xp_multiplier	3	6							The wreckage of an alien starship that arrived many millenia ago, from which we can glean much useful knowledge.
+Unique Ecosystem	1002	none	1				object					Biochemistry			bio	3	12										An isolated ecosystem full of unique organisms that allows us to vastly expand our biological tool set.
+Cryptid Colony	1003	none	1				object					Exobiology			bio	10	20	xp_multiplier	3	6							A colony of elusive creatures, descendants of ancient hybrids with beings from another realm. Research of these beings illuminates countless biological mysteries.
+Henge	1004	none	1				object								psi	2	15										A mystical arrangement of stones whose origin is lost in time, it is capable of bridging worlds and better connecting us with our deep intuition.
+Oracle	1005	none	1				object					Akashic Access			psi	10	22	xp_multiplier	3	6							An ancient hermit community of powerful mystics whose services add greatly to our abilities.
+Oil Deposit	1006	none	1				object					Internal Combustion			energy_rate	10	20										A rich fossil fuel deposit that provides ample energy for internal combustion engines.
+Uranium Deposit	1007	none	1				object					Nuclear Power Source			energy_rate	25	60										A thick vein of uranium capable of fueling nuclear reactors.
+Nickel Deposit	1008	none	1				object					Cold Fusion Power Source			energy_rate	75	200										A vast supply of nickel, which may be used to unleash colossal amounts of energy via cold fusion reactions.
+Geothermal Vent	1009	none	1				object								energy_rate	2	12										A geological heat source that can be harnessed by living systems.
+Ley Lines	1010	none	1				object					Gaia Energy			energy_rate	75	180										A natural confluence of life energy that we learn to direct.
+Quartz Deposit	1011	none	1				object					Crystal Resonance			energy_rate	4	19										A natural conduit of etheric energy that allows us to magnify our psychic abilities.
+Grave of an Ancient God	1012	none	1				object								energy_rate	100	300										Remnants of a primordial diety, perhaps a casualty in an ancient war amongst gods. This site remains a powerful source of exotic supernatural energies.
+Fresh Water	1013	none	1				object								manpower_rate	4	38										A clean source of fresh water that allows us to expand our agriculture, producing more crops to feed a greater number of people.
+Fertile Soil	1014	none	1				object								manpower_rate	3	25										A rich, high-yielding expanse of soil that can produce lush and plentiful crops.
+Research Facility	1015	none	1				object								xp_multiplier	4	8	tech	2	8	bio	1	4				A well equipped scientific installation manned by dozens of experts who are happy to cooperate with the latest occupying forces.
+Alchemist's Lair	1016	none	1				object								xp_multiplier	4	8	psi	2	8	bio	1	4				An ancient academy of alchemists who will gladly donate their services in exchange for test subjects.

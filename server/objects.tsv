@@ -1,0 +1,23 @@
+name	ID	type	techID	credits per hour	xp per hour	frequency	range min	range max	xp	description
+Iron Deposit	1000	tech	1000			5	0	1	75	Iron mining gives us the raw materials to build more technological wonders.
+Ancient Starship Wreckage	1001	tech	1001			1	0.25	1	400	The wreckage of an alien starship that arrived many millenia ago, from which we can glean much useful knowledge.
+Unique Ecosystem	1002	tech	1002			5	0	1	75	An isolated ecosystem full of unique organisms that allows us to vastly expand our biological tool set.
+Cryptid Colony	1003	tech	1003			1	0.2	1	400	A colony of elusive creatures, descendants of ancient hybrids with beings from another realm. Research of these beings illuminates countless biological mysteries.
+Henge	1004	tech	1004			5	0	1	75	A mystical arrangement of stones whose origin is lost in time, it is capable of bridging worlds and better connecting us with our deep intuition.
+Oracle	1005	tech	1005			1	0.275	1	400	An ancient hermit community of powerful mystics whose services add greatly to our abilities.
+Oil Deposit	1006	tech	1006			4	0	0.2	100	A rich fossil fuel deposit that provides ample energy for internal combustion engines.
+Uranium Deposit	1007	tech	1007			3	0.1	0.3	600	A thick vein of uranium capable of fueling nuclear reactors.
+Nickel Deposit	1008	tech	1008			2	0.2	1	200	A vast supply of nickel, which may be used to unleash colossal amounts of energy via cold fusion reactions.
+Geothermal Vent	1009	tech	1009			16	0	1	100	A geological heat source that can be harnessed by living systems.
+Ley Lines	1010	tech	1010			2	0.15	1	200	A natural confluence of life energy that we learn to direct.
+Quartz Deposit	1011	tech	1011			24	0	1	50	A natural conduit of etheric energy that allows us to magnify our psychic abilities.
+Grave of an Ancient God	1012	tech	1012			1	0.125	1	400	Remnants of a primordial diety, perhaps a casualty in an ancient war amongst gods. This site remains a powerful source of exotic supernatural energies.
+Fresh Water	1013	tech	1013			20	0	1	75	A clean source of fresh water that allows us to expand our agriculture, producing more crops to feed a greater number of people.
+Fertile Soil	1014	tech	1014			32	0	1	50	A rich, high-yielding expanse of soil that can produce lush and plentiful crops.
+Research Facility	1015	tech	1015			1	0.3	1	250	A well equipped scientific installation manned by dozens of experts who are happy to cooperate with the latest occupying forces.
+Alchemist's Lair	1016	tech	1016			1	0.18	1	250	An ancient academy of alchemists who will gladly donate their services in exchange for test subjects.
+Orb of Noontide	2000	orb		1	100				250	An ancient artifact with mysterious powers. One of many that are rumored to lie hidden in these lands.
+Orb of Shadow	2001	orb		2	400				500	An ancient artifact crackling with strange energies. More powerful than many of the orbs known to lie in this land.
+Orb of the Void	2002	orb		4	1000				1000	A dangerous and mysterious artifact from the distant past. Only a small number are known to exist. 
+Orb of Destiny	2003	orb		6	2000				1500	A powerful ancient artifact. Few rival it, and only the Orb of Fire exceeds it.
+Orb of Fire	2004	orb		10	5000				2500	A primordial artifact of living fire. The most powerful of the orbs scattered throughout the land.

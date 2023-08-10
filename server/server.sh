@@ -1,0 +1,1 @@
+java -cp . -Xms512m -Xmx1000m WOCServer/WOCServer

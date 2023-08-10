@@ -1,0 +1,61 @@
+name	ID	criteria	criteria subject	criteria amount	reward credits	reward xp	description
+First Assault	0	CAPTURE_LAND		5,20,100	5,40,80	100,250,500	Capture 100 squares of land from other nations
+Settler	1	OCCUPY_LAND		50,5000,50000	5,100,250	100,1500,100000	Occupy 1000 squares of unclaimed land
+Expansion	2	SUM_AREA		100,500,1000	5,30,100	20,50,250	Reach a total area of 500 squares
+Enemy of my Enemy	3	FORM_ALLIANCE		1	5	75	Form an alliance with another nation
+Home Improvement	4	NUM_UPGRADES		10,500,25000	5,100,250	100,5000,250000	Upgrade 25 walls or defenses
+Strength in Numbers	5	MEMBERS_ONLINE		2,4,8	5,50,100	100,2000,10000	Have two members of your nation online at one time
+Efficiency Expert	6	GEO_EFFICIENCY		100	10	250	Reach 100% geographic efficiency
+Resource Rich	7	NUM_RESOURCES		4,20,100	5,50,100	100,2000,25000	Hold 5 different resource locations at one time
+Surround and Gain Ground	8	CAPTURE_BY_FLANKING		2,200,5000	5,50,100	100,10000,500000	Capture 3 enemy defenses that have first been disabled by being flanked
+Scholar	9	DISCOVER	Great Library	1	5	100	Discover one of the ancient Great Libraries thought to be hidden in these lands
+Anthropologist	10	DISCOVER	Shamanic Tribe	5,40,200	5,50,100	100,8000,500000	Discover 5 isolated Shamanic Tribes
+Treasure Hunter	11	DISCOVER	Treasure Trove	8,60,300	10,50,100	150,1000,600000	Discover 8 hidden Treasure Troves
+Joule Thief	12	ENERGY_SUPPLY_LINE		3,30,300	5,50,100	125,1000,500000	Capture 3 energy supply lines from enemy territory
+Prisoners of War	13	MANPOWER_SUPPLY_LINE		5,50,250	5,50,100	125,1000,500000	Capture 5 manpower supply lines from enemy territory
+Junkyard Dog	14	SALVAGE_BUILD		10,500,25000	5,50,100	75,2500,500000	Salvage 50 defenses
+Tear Down Those Walls	15	SALVAGE_WALL		100,5000,250000	10,50,100	500,5000,1000000	Salvage 5000 walls
+Cannon Fodder	16	BUILD_ACTIVATE	Cannon	10,500,25000	5,50,100	75,4000,200000	Our Cannons fire on attacking enemies 50 times
+Gray Goo	17	BUILD_ACTIVATE	Nanobot Swarm Base	5,500,50000	10,100,250	150,40000,1000000	Our Nanobot Swarm Bases launch an attack on invading enemies 10 times
+Biohazard	18	BUILD_ACTIVATE	Supervirus Contagion	1,100,10000	10,100,250	75,20000,500000	Our Supervirus Contagion defense is launched against an invading enemy
+Bolts from the Blue	19	BUILD_ACTIVATE	Keraunocon	5,500,50000	10,100,250	100,50000,5000000	Our Keraunocon defense electrifies invading enemies 5 times
+Mesmerizing	20	BUILD_ACTIVATE	Hypnotic Inducer	4,400,40000	10,100,250	100,50000,5000000	Our Hypnotic Inducer defense lulls our invading enemies into surrendering 25 times
+Eldritch Priest	21	BUILD_ACTIVATE	Temple of Zoth-Ommog	3,300,30000	10,100,250	100,50000,5000000	Our Temple of Zoth-Ommog defense summons the unutterable upon our enemies 3 times
+Magic Carpet Ride	22	BUILD_ACTIVATE	Djinn Portal	10,500,25000	10,100,250	100,50000,5000000	Our Djinn Portal defense wards off invading enemies 100 times
+Energy Heist	23	STOLEN_ENERGY		1000,50000,2500000	5,50,100	100,50000,5000000	Steal 10,000 energy from other nations by capturing their energy storage or supply lines
+Hostile Takeover	24	STOLEN_MANPOWER		1000,50000,2500000	5,50,100	100,50000,5000000	Steal 1000 manpower from other nations by capturing their manpower storage or supply lines
+Counter Offensive	25	CAPTURE_LAND_COUNTER_ATTACK		100,5000,50000	5,50,100	100,50000,5000000	Capture 2500 squares of land from invading nations through counter-attack by defenses
+Lebensraum	26	CAPTURE_LAND		250,25000,250000	5,50,100	100,50000,5000000	Capture 10,000 squares of land from other nations
+Major Donor	27	DONATE_ENERGY		1000,50000,2500000	5,50,100	100,50000,5000000	Donate a total of 100,000 energy to allies
+World Class	28	WINNINGS		100,5000,250000	10,500,5000	100,50000,5000000	Earn a total of 10,000 credits from captured orbs
+Resource Magnate	29	NUM_RESOURCES		100,200,300	50,100,200	100,50000,500000	Hold 15 different resource locations at one time
+Earning Empire	30	NUM_ORBS		3,10,30	50,100,250	1000,100000,1000000	Hold 4 different orb locations at one time
+Strangelove	31	BUILD	Dead Hand	5,50,500	10,100,250	100,50000,500000	Build 5 Dead Hand defenses
+Fangorn	32	BUILD	Tree Summoner	10,400,2500	20,100,250	100,50000,500000	Build 10 Tree Summoner defenses
+Firestarter	33	BUILD	Pyroclasm	8,250,2000	20,100,250	100,50000,500000	Build 8 Pyroclasm defenses
+Unlawful Entry	34	CAPTURE_WALL		10,500,25000	10,100,300	100,50000,5000000	Capture 2500 walls from enemy nations
+Luddite	35	CAPTURE_BUILD_CATEGORY	Tech	10,500,25000	10,200,400	100,50000,5000000	Capture 100 enemy tech defenses
+Exterminator	36	CAPTURE_BUILD_CATEGORY	Bio	40,2000,100000	20,300,800	200,100000,1000000	Capture 400 enemy bio defenses
+Malleus Maleficarum	37	CAPTURE_BUILD_CATEGORY	Psi	100,5000,250000	40,500,1200	400,200000,2000000	Capture 1000 enemy psi defenses
+Radio Interference	38	CAPTURE_BUILD	Radio Tower	5,50,500	10,80,200	100,50000,500000	Capture 25 enemy Radio Towers
+Averting Catstrophe	39	CAPTURE_BUILD	Geographic Wipe	4,40,400	10,80,200	50,25000,250000	Capture 8 enemy Geographic Wipe defenses
+Antigen	40	CAPTURE_BUILD	Pathogen Spore Launcher	20,200,2000	20,100,250	200,50000,500000	Capture 20 enemy Pathogen Spore Launchers
+Lumberjack	41	CAPTURE_BUILD	Tree Summoner	12,300,3000	10,80,200	100,50000,500000	Capture 12 enemy Tree Summoners
+Faraday Cage	42	CAPTURE_BUILD	Keraunocon	10,250,10000	10,80,200	100,50000,1000000	Capture 50 enemy Keraunocons
+Breaking the Trance	43	CAPTURE_BUILD	Hypnotic Inducer	5,50,500	10,80,200	100,50000,500000	Capture 5 enemy Hypnotic Inducers
+Despoiler	44	CAPTURE_RESOURCE_NUM		50,250,1000	50,100,250	75,2500,500000	Capture 250 different resources from enemy nations
+Iron Man	45	CAPTURE_OBJECT	Iron Deposit	4,20,100	5,20,500	75,500,15000	Capture 10 different Iron Deposits
+Majestic 12	46	CAPTURE_OBJECT	Ancient Starship Wreckage	6	15	30000	Capture 6 different Ancient Starship Wreckages
+Habituator	47	CAPTURE_OBJECT	Cryptid Colony	5	15	30000	Capture 5 different Cryptid Colonies
+Oil Baron	48	CAPTURE_OBJECT	Oil Deposit	4,20,100	5,40,100	100,5000,100000	Capture 20 different Oil Deposits
+Dharma Initiative	49	CAPTURE_OBJECT	Ley Lines	7	15	50000	Capture 7 different Ley Lines locations
+Lattice Loader	50	CAPTURE_OBJECT	Nickel Deposit	4,10,50	5,15,40	100,5000,100000	Capture 10 different Nickel Deposits
+Grave Digger	51	CAPTURE_OBJECT	Grave of an Ancient God	4	15	40000	Capture 4 different Grave of an Ancient God locations
+Dowser	52	CAPTURE_OBJECT	Fresh Water	4,20,100	5,15,40	75,500,15000	Capture 50 different Fresh Water locations
+Big Agra	53	CAPTURE_OBJECT	Fertile Soil	4,20,100	5,15,40	100,5000,100000	Capture 50 different Fertile Soil locations
+Orb Hunter	54	CAPTURE_OBJECT	Orb of Noontide	3,10,30	10,50,100	100,5000,100000	Capture 12 different Orbs of Noontide
+Shadow Walker	55	CAPTURE_OBJECT	Orb of Shadow	8	25	4000	Capture 8 different Orbs of Shadow
+Enter the Void	56	CAPTURE_OBJECT	Orb of the Void	4	50	20000	Capture 4 different Orbs of the Void
+Seer of Destiny	57	CAPTURE_OBJECT	Orb of Destiny	3	100	80000	Capture 3 different Orbs of Destiny
+Master of the Flame	58	CAPTURE_OBJECT	Orb of Fire	1	250	100000	Capture the Orb of Fire
+Reinforcements	59	DONATE_MANPOWER		1000,50000,2500000	10,50,100	100,5000,100000	Donate a total of 100,000 manpower to allies
