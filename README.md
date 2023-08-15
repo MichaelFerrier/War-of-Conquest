@@ -13,7 +13,7 @@ A. The server code for the “new” War of Conquest (2016) has been made open s
 
 Q. What about the War of Conquest client?
 ----------------------------------------------------------------------------------
-A. The War of Conquest client has not been made open source. It contains and depends on a lot of code, graphics, 3D models, and other assets that are not open source, and so I do not have the right to distribute them. The War of Conquest client will not be developed any further, so if you would like to run a server you will need to ensure that it remains compatible with the existing War of Conquest client. Alternatively, you can develop your own new client. This would allow you the freedom to modify the server code without being limited to maintaining compatibility with the existing client. If you are interested in doing this, let me know and I can share with you the parts of the client source code that I have the right to distribute and that are useful for interfacing with the server.
+A. The War of Conquest client has not been made open source. It contains and depends on a lot of code, graphics, 3D models, and other assets that are not open source, and so I do not have the right to distribute them. The War of Conquest client will not be developed any further, so if you would like to run a server you will need to ensure that it remains compatible with the existing War of Conquest client. Alternatively, you can develop your own new client. This would allow you the freedom to modify the server code without being limited to maintaining compatibility with the existing client. If you are interested in doing this, a good place to start would be the client/ directory in the GitHub repository. This contains the client C# source files that I wrote and so am able to make open source. It also contains the Unity scene file, and many of the graphics files that I have the rights to share. It is, however, missing many files that I don't have the right to share, so it is nowhere near ready to build and run. It's made available as a strating point for your own project.
 
 Q. What about the original, or “classic” War of Conquest?
 ----------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ service mysql restart
 18. As above, in my.cnf set:
 max_allowed_packet	= 500M
 Likewise, if done via FTP log in as root. Then restart mysql.
-19. On the server that hosts the player account MYSQL DB,which must be accessed remotely, FTP login using root account and edit file etc/mysql/my.cnf to comment out (place # before) the line “bind-address = 127.0.0.1”. Doing so will allow remote connections. Then type “sudo service mysql restart”.
+19. On the server that hosts the player account MYSQL DB, which must be accessed remotely, login via SFTP using the root account and edit file etc/mysql/my.cnf to comment out (place # before) the line “bind-address = 127.0.0.1”. Doing so will allow remote connections. Then type “sudo service mysql restart”. (Note that if you're running just one WoC server, you'll likely want to host the player DB on that same game server. If you run more than one WoC server, it's up to you whether you want each one to have its own player DB, or if you'd like to host one shared player DB on one of your servers and have all of them use that one player DB. That would allow all of your game worlds to share the same set of player accounts.) 
 20. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
 Default configuration is fine.
 21. Install and use Uncomplicated Firewall (ufw) as described here:
@@ -219,3 +219,67 @@ generate_map file=landgen_800_400_5000.png
 
 4. In the server’s config.json file change the min_level_limit to the left-most x position on the map that you want level 1 players to be able to start at, as you determined in the previous step.
 5. You can now run the new game server using screen (as described above), test it, and then let in players!
+
+Building Your Own Client
+===============================
+Because the War of Conquest client makes use of code, images, sounds, music, 3d models and other assets that I do not own the rights to, I cannot make the full client open source. I have however made open source the code and assets that I do have the rights to distribute. These can be found in the client/ directory of the GitHub repository. This is just a starting point; because so many files are missing, it is nowhere near being able to build and run. To turn this into a working client, you would need to know your way around Unity and be able to integrate replacement assets, or else eliminate references to, everything that's missing. Alternatively, you can create your own original client using whatever software framework you'd like, and just use the provided client code as a reference for how to communicate with the server, how the client displays the 3D map, and so on.
+
+Here is a list of assets available through the Unity Asset Store that are used by the War of Conquest client, but that I cannot distribute in this repository because I do not own the rights to them. Note that some of these assets, as used in the WoC client, have been modified from their original form.
+
+Texture Utility (Allebi)
+2DxFX: 2D Sprite FX (Vetasoft)
+Highlight Glow System (3y3net)
+Inventory Plus (3y3net)
+AQUAS Lite
+Stonehenge (Blex)
+Blue Button Fantasy GUI
+Stone Wall Pack (Zug Zug Art)
+Cannon Pack (Belias)
+Coconut Palm Tree (Focus3D)
+Construction Site 1 (Kado 3D)
+Crystal and Gems (DzenGames)
+Easy Mobile Pro
+Cross Platform Native Plugins
+Steamworks.NET
+Fantasy Monster Pack #5 (StudioEZ)
+Beautiful Transitions (Flip Web Apps)
+Flying Saucer (Tiger Shark Studios)
+Genie (3dFoin)
+URP - Ghost Shaders (Ciconia Studio)
+Http Client (Clayton Industries)
+I2 Localization (Inter Illusion)
+Isometric Village 3D
+Listbox (Orbcreation)
+Low Poly Sci Fi Modular Structures (Kado 3D)
+Lowpoly Crystals
+Magical (Hardworker Studios)
+Magical - Pro Edition (Hardworker Studios)
+Magical Effects (Botumys)
+Mining, Ore, Ingots, & Minerals Kit (Shadowball Games)
+Ultimate VFX (Mirza Beig)
+Fire & Fog MEGABundle 01 (NeatWolf)
+Particle Ribbon (Moonflower Carnivore)
+Paymentwall Unity SDK
+Vectrosity (Starscene Software)
+Procedural Lightning (Digital Ruby)
+QuickEdit: Mesh Editor (Procore)
+Ballistic Projectile Helper (Fairuz)
+Gas Storage Pack (psr)
+Better Rocks and Cliffs (Quantum Theory)
+Rabid Assault Mech (Daniel Cole)
+Detailed Radio Tower (Too Tidy Labs)
+Satellite Dish (RK Assets)
+Sci-Fi Turret & Effects (Maungers)
+10 Simple Weapons
+Skulls Megapack / Low Poly (Brainbox)
+Sky5X One (RKD)
+Snake Head (Statue/Passage/Gate/Lair Entrance) (Deleon)
+Standard Assets 2018.4 | Check out Starter Assets: First Person & Third Person
+Super Mountain Collection (Super Game Tools)
+Technical Laboratory: Reactor (Nick Stenton)
+Ancient Temple (3DMONDRA)
+TextMesh Pro
+New UI Widgets (Ilia Novikov)
+3DRT - Wargear Turrets (3DRT)
+World War II - American Plane (WalterLima3D)
+Low-Poly Tanks (A. Olsen 'n Stuff)
