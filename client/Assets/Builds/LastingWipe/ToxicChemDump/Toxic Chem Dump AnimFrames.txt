@@ -1,0 +1,5 @@
+Toxic Chem Dump Animation Frames
+
+            Idle ---   0 - 159
+Receive Damage 1 --- 160 - 179
+Receive Damage 2 --- 180 - 199

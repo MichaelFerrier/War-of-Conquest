@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: 1251e82a0f078ab45baae05b7138b8c5
+timeCreated: 1489430399
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: base_vegie
+    100002: buttress
+    100004: roots1
+    100006: roots2
+    100008: roots3
+    100010: roots_base
+    100012: //RootNode
+    100014: tower_stone
+    100016: upper_stone
+    100018: upper_vegie
+    400000: base_vegie
+    400002: buttress
+    400004: roots1
+    400006: roots2
+    400008: roots3
+    400010: roots_base
+    400012: //RootNode
+    400014: tower_stone
+    400016: upper_stone
+    400018: upper_vegie
+    2300000: base_vegie
+    2300002: buttress
+    2300004: roots1
+    2300006: roots2
+    2300008: roots3
+    2300010: roots_base
+    2300012: tower_stone
+    2300014: upper_stone
+    2300016: upper_vegie
+    3300000: base_vegie
+    3300002: buttress
+    3300004: roots1
+    3300006: roots2
+    3300008: roots3
+    3300010: roots_base
+    3300012: tower_stone
+    3300014: upper_stone
+    3300016: upper_vegie
+    4300000: base_vegie
+    4300002: buttress
+    4300004: roots1
+    4300006: roots2
+    4300008: roots3
+    4300010: roots_base
+    4300012: tower_stone
+    4300014: upper_stone
+    4300016: upper_vegie
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

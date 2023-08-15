@@ -1,0 +1,9 @@
+Thanks for purchasing this asset.
+
+Just drag&drop prefab to your scene. When you scale the sun all particle effects will be scaled automatically by script "Sun_scale" on start.
+Glow uses mesh particles and has a "lookat" script because billboards are not affected by camera distortions. 
+Please use AnimatedTiledTexture script to control sun rotation(rot_speed) and texture animation speed (Frames per Second).
+
+Feel free to contact me if you have any questions: stanislavdol@gmail.com
+
+Good luck with your projects!

@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 4731c8c60f61f364fa4e28e57dcc2245
+timeCreated: 1485430601
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Anim_Level2
+    100002: Bn_Log
+    100004: Bn_Root
+    100006: Bn_Tree0
+    100008: Bn_Tree001
+    100010: Bn_Tree002
+    100012: Bn_Tree003
+    100014: Bn_Tree004
+    100016: Bn_Tree005
+    100018: Bn_Tree006
+    100020: Bn_Tree007
+    100022: Bn_Tree008
+    100024: Bn_Tree009
+    100026: Bn_Tree010
+    100028: Bn_Tree011
+    100030: Bn_Tree012
+    100032: Bn_Tree013
+    100034: Bn_Tree014
+    100036: Bn_Tree015
+    100038: Bn_Tree016
+    100040: Bn_Tree017
+    100042: Bn_Tree018
+    100044: Bn_Tree019
+    100046: Bn_Tree020
+    100048: Bn_Tree021
+    100050: Bn_Tree022
+    100052: Bn_Tree023
+    100054: Bn_Tree024
+    100056: Bn_Tree025
+    100058: Bn_Tree026
+    100060: Bn_Tree027
+    100062: Bn_Tree028
+    100064: Bn_Tree029
+    100066: Bn_Tree030
+    100068: Bn_Tree031
+    100070: //RootNode
+    400000: Anim_Level2
+    400002: Bn_Log
+    400004: Bn_Root
+    400006: Bn_Tree0
+    400008: Bn_Tree001
+    400010: Bn_Tree002
+    400012: Bn_Tree003
+    400014: Bn_Tree004
+    400016: Bn_Tree005
+    400018: Bn_Tree006
+    400020: Bn_Tree007
+    400022: Bn_Tree008
+    400024: Bn_Tree009
+    400026: Bn_Tree010
+    400028: Bn_Tree011
+    400030: Bn_Tree012
+    400032: Bn_Tree013
+    400034: Bn_Tree014
+    400036: Bn_Tree015
+    400038: Bn_Tree016
+    400040: Bn_Tree017
+    400042: Bn_Tree018
+    400044: Bn_Tree019
+    400046: Bn_Tree020
+    400048: Bn_Tree021
+    400050: Bn_Tree022
+    400052: Bn_Tree023
+    400054: Bn_Tree024
+    400056: Bn_Tree025
+    400058: Bn_Tree026
+    400060: Bn_Tree027
+    400062: Bn_Tree028
+    400064: Bn_Tree029
+    400066: Bn_Tree030
+    400068: Bn_Tree031
+    400070: //RootNode
+    4300000: Anim_Level2
+    7400000: TreeSummon2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Anim_Level2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TreeSummon2
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anim_Level2
+        weight: 1
+      - path: Bn_Root
+        weight: 1
+      - path: Bn_Root/Bn_Log
+        weight: 1
+      - path: Bn_Root/Bn_Tree0
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001/Bn_Tree002
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001/Bn_Tree002/Bn_Tree003
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001/Bn_Tree002/Bn_Tree003/Bn_Tree004
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001/Bn_Tree002/Bn_Tree003/Bn_Tree004/Bn_Tree005
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001/Bn_Tree002/Bn_Tree003/Bn_Tree004/Bn_Tree005/Bn_Tree006
+        weight: 1
+      - path: Bn_Root/Bn_Tree0/Bn_Tree001/Bn_Tree002/Bn_Tree003/Bn_Tree004/Bn_Tree005/Bn_Tree006/Bn_Tree007
+        weight: 1
+      - path: Bn_Root/Bn_Tree008
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009/Bn_Tree010
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009/Bn_Tree010/Bn_Tree011
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009/Bn_Tree010/Bn_Tree011/Bn_Tree012
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009/Bn_Tree010/Bn_Tree011/Bn_Tree012/Bn_Tree013
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009/Bn_Tree010/Bn_Tree011/Bn_Tree012/Bn_Tree013/Bn_Tree014
+        weight: 1
+      - path: Bn_Root/Bn_Tree008/Bn_Tree009/Bn_Tree010/Bn_Tree011/Bn_Tree012/Bn_Tree013/Bn_Tree014/Bn_Tree015
+        weight: 1
+      - path: Bn_Root/Bn_Tree016
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017/Bn_Tree018
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017/Bn_Tree018/Bn_Tree019
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017/Bn_Tree018/Bn_Tree019/Bn_Tree020
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017/Bn_Tree018/Bn_Tree019/Bn_Tree020/Bn_Tree021
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017/Bn_Tree018/Bn_Tree019/Bn_Tree020/Bn_Tree021/Bn_Tree022
+        weight: 1
+      - path: Bn_Root/Bn_Tree016/Bn_Tree017/Bn_Tree018/Bn_Tree019/Bn_Tree020/Bn_Tree021/Bn_Tree022/Bn_Tree023
+        weight: 1
+      - path: Bn_Root/Bn_Tree024
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025/Bn_Tree026
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025/Bn_Tree026/Bn_Tree027
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025/Bn_Tree026/Bn_Tree027/Bn_Tree028
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025/Bn_Tree026/Bn_Tree027/Bn_Tree028/Bn_Tree029
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025/Bn_Tree026/Bn_Tree027/Bn_Tree028/Bn_Tree029/Bn_Tree030
+        weight: 1
+      - path: Bn_Root/Bn_Tree024/Bn_Tree025/Bn_Tree026/Bn_Tree027/Bn_Tree028/Bn_Tree029/Bn_Tree030/Bn_Tree031
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

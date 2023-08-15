@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 30632ddaf33b3074499687c5d6398f51
+timeCreated: 1489540319
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FangSong
+  fontNames:
+  - FangSong
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

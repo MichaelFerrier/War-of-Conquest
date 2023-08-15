@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b685c7b403b68e64f9b502436a302820
+timeCreated: 1489532868
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Proxima Nova
+  fontNames:
+  - Proxima Nova
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 919187405db3c23419d01571a1dcebd6, type: 3}
+  - {fileID: 12800000, guid: 9f8285530759d88468ffb247b7afb984, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,5 @@
+Brain Sweeper Animation Frames
+
+Idle - From frame 0 To 300
+
+Active - From frame 301 to 400

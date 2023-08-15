@@ -1,0 +1,5 @@
+SuperVirus Contagion Animation Frames - 
+
+Idle - 0 to (and including) 200 
+
+Attack - 201 to (and including) 320

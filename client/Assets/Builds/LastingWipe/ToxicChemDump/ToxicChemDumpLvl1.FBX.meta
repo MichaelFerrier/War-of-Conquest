@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 3cc44f27fd2368d48bbb2d6abcefb972
+timeCreated: 1490742254
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: HeadNub
+    100002: Leg1Bone0
+    100004: Leg1Bone001
+    100006: Leg1Bone002
+    100008: Leg1Bone003
+    100010: Leg1Nub
+    100012: Leg2Bone0
+    100014: Leg2Bone001
+    100016: Leg2Bone002
+    100018: Leg2Bone003
+    100020: Leg2Nub
+    100022: Leg3Bone0
+    100024: Leg3Bone001
+    100026: Leg3Bone002
+    100028: Leg3Bone003
+    100030: Leg3Bone005
+    100032: Leg3Bone006
+    100034: Leg3Bone007
+    100036: Leg3Nub
+    100038: Leg3Nub001
+    100040: Leg4Bone0
+    100042: Leg5Bone0
+    100044: Leg5Bone001
+    100046: Leg5Bone002
+    100048: Leg5Bone003
+    100050: Leg5Nub
+    100052: Leg6Bone0
+    100054: Leg6Bone001
+    100056: Leg6Bone002
+    100058: Leg6Bone003
+    100060: Leg6Nub
+    100062: LowerBodyBone
+    100064: MainBody Control
+    100066: Pelvis
+    100068: RootBone
+    100070: //RootNode
+    100072: ToxicXChemDumpLvl1
+    100074: UpperBodyBone
+    400000: HeadNub
+    400002: Leg1Bone0
+    400004: Leg1Bone001
+    400006: Leg1Bone002
+    400008: Leg1Bone003
+    400010: Leg1Nub
+    400012: Leg2Bone0
+    400014: Leg2Bone001
+    400016: Leg2Bone002
+    400018: Leg2Bone003
+    400020: Leg2Nub
+    400022: Leg3Bone0
+    400024: Leg3Bone001
+    400026: Leg3Bone002
+    400028: Leg3Bone003
+    400030: Leg3Bone005
+    400032: Leg3Bone006
+    400034: Leg3Bone007
+    400036: Leg3Nub
+    400038: Leg3Nub001
+    400040: Leg4Bone0
+    400042: Leg5Bone0
+    400044: Leg5Bone001
+    400046: Leg5Bone002
+    400048: Leg5Bone003
+    400050: Leg5Nub
+    400052: Leg6Bone0
+    400054: Leg6Bone001
+    400056: Leg6Bone002
+    400058: Leg6Bone003
+    400060: Leg6Nub
+    400062: LowerBodyBone
+    400064: MainBody Control
+    400066: Pelvis
+    400068: RootBone
+    400070: //RootNode
+    400072: ToxicXChemDumpLvl1
+    400074: UpperBodyBone
+    4300000: ToxicXChemDumpLvl1
+    7400000: toxchemdump1 idle
+    7400002: toxchemdump1 active
+    7400004: toxchemdump1 active
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ToxicXChemDumpLvl1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: toxchemdump1 active
+      takeName: Take 001
+      firstFrame: 159
+      lastFrame: 199
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MainBody Control
+        weight: 1
+      - path: MainBody Control/Pelvis
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001/Leg1Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001/Leg1Bone002/Leg1Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001/Leg1Bone002/Leg1Bone003/Leg1Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001/Leg2Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001/Leg2Bone002/Leg2Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001/Leg2Bone002/Leg2Bone003/Leg2Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001/Leg3Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001/Leg3Bone002/Leg3Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001/Leg3Bone002/Leg3Bone003/Leg3Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005/Leg3Bone006
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005/Leg3Bone006/Leg3Bone007
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005/Leg3Bone006/Leg3Bone007/Leg3Nub001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001/Leg5Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001/Leg5Bone002/Leg5Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001/Leg5Bone002/Leg5Bone003/Leg5Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001/Leg6Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001/Leg6Bone002/Leg6Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001/Leg6Bone002/Leg6Bone003/Leg6Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/UpperBodyBone
+        weight: 1
+      - path: MainBody Control/Pelvis/UpperBodyBone/HeadNub
+        weight: 1
+      - path: MainBody Control/Pelvis/UpperBodyBone/LowerBodyBone
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: ToxicXChemDumpLvl1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: toxchemdump1 idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MainBody Control
+        weight: 1
+      - path: MainBody Control/Pelvis
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001/Leg1Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001/Leg1Bone002/Leg1Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg1Bone0/Leg1Bone001/Leg1Bone002/Leg1Bone003/Leg1Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001/Leg2Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001/Leg2Bone002/Leg2Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg2Bone0/Leg2Bone001/Leg2Bone002/Leg2Bone003/Leg2Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001/Leg3Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001/Leg3Bone002/Leg3Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg3Bone0/Leg3Bone001/Leg3Bone002/Leg3Bone003/Leg3Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005/Leg3Bone006
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005/Leg3Bone006/Leg3Bone007
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg4Bone0/Leg3Bone005/Leg3Bone006/Leg3Bone007/Leg3Nub001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001/Leg5Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001/Leg5Bone002/Leg5Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg5Bone0/Leg5Bone001/Leg5Bone002/Leg5Bone003/Leg5Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001/Leg6Bone002
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001/Leg6Bone002/Leg6Bone003
+        weight: 1
+      - path: MainBody Control/Pelvis/Leg6Bone0/Leg6Bone001/Leg6Bone002/Leg6Bone003/Leg6Nub
+        weight: 1
+      - path: MainBody Control/Pelvis/UpperBodyBone
+        weight: 1
+      - path: MainBody Control/Pelvis/UpperBodyBone/HeadNub
+        weight: 1
+      - path: MainBody Control/Pelvis/UpperBodyBone/LowerBodyBone
+        weight: 1
+      - path: RootBone
+        weight: 1
+      - path: ToxicXChemDumpLvl1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
