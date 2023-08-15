@@ -226,60 +226,60 @@ Because the War of Conquest client makes use of code, images, sounds, music, 3d 
 
 Here is a list of assets available through the Unity Asset Store that are used by the War of Conquest client, but that I cannot distribute in this repository because I do not own the rights to them. Note that some of these assets, as used in the WoC client, have been modified from their original form.
 
-Texture Utility (Allebi)
-2DxFX: 2D Sprite FX (Vetasoft)
-Highlight Glow System (3y3net)
-Inventory Plus (3y3net)
-AQUAS Lite
-Stonehenge (Blex)
-Blue Button Fantasy GUI
-Stone Wall Pack (Zug Zug Art)
-Cannon Pack (Belias)
-Coconut Palm Tree (Focus3D)
-Construction Site 1 (Kado 3D)
-Crystal and Gems (DzenGames)
-Easy Mobile Pro
-Cross Platform Native Plugins
-Steamworks.NET
-Fantasy Monster Pack #5 (StudioEZ)
-Beautiful Transitions (Flip Web Apps)
-Flying Saucer (Tiger Shark Studios)
-Genie (3dFoin)
-URP - Ghost Shaders (Ciconia Studio)
-Http Client (Clayton Industries)
-I2 Localization (Inter Illusion)
-Isometric Village 3D
-Listbox (Orbcreation)
-Low Poly Sci Fi Modular Structures (Kado 3D)
-Lowpoly Crystals
-Magical (Hardworker Studios)
-Magical - Pro Edition (Hardworker Studios)
-Magical Effects (Botumys)
-Mining, Ore, Ingots, & Minerals Kit (Shadowball Games)
-Ultimate VFX (Mirza Beig)
-Fire & Fog MEGABundle 01 (NeatWolf)
-Particle Ribbon (Moonflower Carnivore)
-Paymentwall Unity SDK
-Vectrosity (Starscene Software)
-Procedural Lightning (Digital Ruby)
-QuickEdit: Mesh Editor (Procore)
-Ballistic Projectile Helper (Fairuz)
-Gas Storage Pack (psr)
-Better Rocks and Cliffs (Quantum Theory)
-Rabid Assault Mech (Daniel Cole)
-Detailed Radio Tower (Too Tidy Labs)
-Satellite Dish (RK Assets)
-Sci-Fi Turret & Effects (Maungers)
-10 Simple Weapons
-Skulls Megapack / Low Poly (Brainbox)
-Sky5X One (RKD)
-Snake Head (Statue/Passage/Gate/Lair Entrance) (Deleon)
-Standard Assets 2018.4 | Check out Starter Assets: First Person & Third Person
-Super Mountain Collection (Super Game Tools)
-Technical Laboratory: Reactor (Nick Stenton)
-Ancient Temple (3DMONDRA)
-TextMesh Pro
-New UI Widgets (Ilia Novikov)
-3DRT - Wargear Turrets (3DRT)
-World War II - American Plane (WalterLima3D)
-Low-Poly Tanks (A. Olsen 'n Stuff)
+- Texture Utility (Allebi)
+- 2DxFX: 2D Sprite FX (Vetasoft)
+- Highlight Glow System (3y3net)
+- Inventory Plus (3y3net)
+- AQUAS Lite
+- Stonehenge (Blex)
+- Blue Button Fantasy GUI
+- Stone Wall Pack (Zug Zug Art)
+- Cannon Pack (Belias)
+- Coconut Palm Tree (Focus3D)
+- Construction Site 1 (Kado 3D)
+- Crystal and Gems (DzenGames)
+- Easy Mobile Pro
+- Cross Platform Native Plugins
+- Steamworks.NET
+- Fantasy Monster Pack #5 (StudioEZ)
+- Beautiful Transitions (Flip Web Apps)
+- Flying Saucer (Tiger Shark Studios)
+- Genie (3dFoin)
+- URP - Ghost Shaders (Ciconia Studio)
+- Http Client (Clayton Industries)
+- I2 Localization (Inter Illusion)
+- Isometric Village 3D
+- Listbox (Orbcreation)
+- Low Poly Sci Fi Modular Structures (Kado 3D)
+- Lowpoly Crystals
+- Magical (Hardworker Studios)
+- Magical - Pro Edition (Hardworker Studios)
+- Magical Effects (Botumys)
+- Mining, Ore, Ingots, & Minerals Kit (Shadowball Games)
+- Ultimate VFX (Mirza Beig)
+- Fire & Fog MEGABundle 01 (NeatWolf)
+- Particle Ribbon (Moonflower Carnivore)
+- Paymentwall Unity SDK
+- Vectrosity (Starscene Software)
+- Procedural Lightning (Digital Ruby)
+- QuickEdit: Mesh Editor (Procore)
+- Ballistic Projectile Helper (Fairuz)
+- Gas Storage Pack (psr)
+- Better Rocks and Cliffs (Quantum Theory)
+- Rabid Assault Mech (Daniel Cole)
+- Detailed Radio Tower (Too Tidy Labs)
+- Satellite Dish (RK Assets)
+- Sci-Fi Turret & Effects (Maungers)
+- 10 Simple Weapons
+- Skulls Megapack / Low Poly (Brainbox)
+- Sky5X One (RKD)
+- Snake Head (Statue/Passage/Gate/Lair Entrance) (Deleon)
+- Standard Assets 2018.4 | Check out Starter Assets: First Person & Third Person
+- Super Mountain Collection (Super Game Tools)
+- Technical Laboratory: Reactor (Nick Stenton)
+- Ancient Temple (3DMONDRA)
+- TextMesh Pro
+- New UI Widgets (Ilia Novikov)
+- 3DRT - Wargear Turrets (3DRT)
+- World War II - American Plane (WalterLima3D)
+- Low-Poly Tanks (A. Olsen 'n Stuff)
