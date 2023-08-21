@@ -13,7 +13,7 @@ A. The server code for the “new” War of Conquest (2016) has been made open s
 
 Q. What about the War of Conquest client?
 ----------------------------------------------------------------------------------
-A. The War of Conquest client has not been made open source. It contains and depends on a lot of code, graphics, 3D models, and other assets that are not open source, and so I do not have the right to distribute them. The War of Conquest client will not be developed any further, so if you would like to run a server you will need to ensure that it remains compatible with the existing War of Conquest client. Alternatively, you can develop your own new client. This would allow you the freedom to modify the server code without being limited to maintaining compatibility with the existing client. If you are interested in doing this, let me know and I can share with you the parts of the client source code that I have the right to distribute and that are useful for interfacing with the server.
+A. The War of Conquest client has not been made open source. It contains and depends on a lot of code, graphics, 3D models, and other assets that are not open source, and so I do not have the right to distribute them. The War of Conquest client will not be developed any further, so if you would like to run a server you will need to ensure that it remains compatible with the existing War of Conquest client. Alternatively, you can develop your own new client. This would allow you the freedom to modify the server code without being limited to maintaining compatibility with the existing client. If you are interested in doing this, a good place to start would be the client/ directory in the GitHub repository. This contains the client C# source files that I wrote and so am able to make open source. It also contains the Unity scene file, and many of the graphics files that I have the rights to share. It is, however, missing many files that I don't have the right to share, so it is nowhere near ready to build and run. It's made available as a strating point for your own project.
 
 Q. What about the original, or “classic” War of Conquest?
 ----------------------------------------------------------------------------------
@@ -48,19 +48,19 @@ https://www.oracle.com/java/technologies/downloads/
 Make sure the locations of the java and javac commands have been added to your path, so that they are available at the command line.
 2. Download the required .jar files for common Java libraries. These files are:
 
-json-simple-1.1.1.jar
-mysql-connector-java-5.1.34-bin.jar
-finj-1.1.5.jar
-commons-codec-1.10.jar
-ij.jar
+- json-simple-1.1.1.jar
+- mysql-connector-java-5.1.34-bin.jar
+- finj-1.1.5.jar
+- commons-codec-1.10.jar
+- ij.jar
 
 They are included in the repository, or can be downloaded from these URLs:
 
-http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
-http://www.java2s.com/ref/jar/download-mysqlconnectorjava5134jar-file.html
-https://sourceforge.net/projects/finj/files/finj-api/
-http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
-http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
+- http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
+- http://www.java2s.com/ref/jar/download-mysqlconnectorjava5134jar-file.html
+- https://sourceforge.net/projects/finj/files/finj-api/
+- http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
+- http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
 
 Once downloaded, create a directory server/java libs/ and copy the .jar files into that directory. The compile script, compile.bat, adds that directory to the class path so that the compiler knows to look in it for the .jar files.
 3. From a command line, cd to the “server” directory and run compile.bat. This will compile the server code. The compiled .class files will be located in the WOCServer subdirectory. These are the .class files you will want to copy into the WOCServer subdirectory on your game server machine, later.
@@ -82,36 +82,36 @@ Putty can be used to access it via ssh. Take note of the IP address you will nee
 9. FileZilla can be used to SFTP files to the server, using the server’s non-root admin username and password, and IP address, on port 22.
 10. Install Java8 as described here: http://tecadmin.net/install-oracle-java-8-jdk-8-ubuntu-via-ppa/
 11. Install the War of Conquest server files in home/admin/server/. Create the directory home/admin/server, and within it create these subdirectories:
-home/admin/server/generated/
-home/admin/server/generated/backup/
-home/admin/server/generated/backup/daily/
-home/admin/server/generated/backup/monthly/
-home/admin/server/generated/backup/weekly/
-home/admin/server/generated/clientmaps/
-home/admin/server/generated/log/
-home/admin/server/generated/moderators/
-home/admin/server/generated/nationlog/
-home/admin/server/generated/publiclog/
-home/admin/server/generated/ranks/
-home/admin/server/images/
-home/admin/server/WOCServer/
+- home/admin/server/generated/
+- home/admin/server/generated/backup/
+- home/admin/server/generated/backup/daily/
+- home/admin/server/generated/backup/monthly/
+- home/admin/server/generated/backup/weekly/
+- home/admin/server/generated/clientmaps/
+- home/admin/server/generated/log/
+- home/admin/server/generated/moderators/
+- home/admin/server/generated/nationlog/
+- home/admin/server/generated/publiclog/
+- home/admin/server/generated/ranks/
+- home/admin/server/images/
+- home/admin/server/WOCServer/
 Within the “WOCServer” subdirectory directory, copy in all of the War of Conquest server .class files. Within the home/admin/server/ directory, copy in all the .tsv and .json files, and the map .png files, as well as server.sh. Within the home/admin/server/images/ directory, upload all of the image files from that directory in the repository.
-12. Make server.sh executable using “chmod +x server.sh”. It can now be run using: “./server.sh”
+12. Make server.sh executable using “sudo chmod +x server.sh”. It can now be run using: “./server.sh”
 13. The War of Conquest server also depends on a few common java libraries. These .jar files are:
 
-json-simple-1.1.1.jar
-mysql-connector-java-5.1.34-bin.jar
-finj-1.1.5.jar
-commons-codec-1.10.jar
-ij.jar
+- json-simple-1.1.1.jar
+- mysql-connector-java-5.1.34-bin.jar
+- finj-1.1.5.jar
+- commons-codec-1.10.jar
+- ij.jar
 
 They are included in the repository, or can be downloaded from these URLs:
 
-http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
-http://www.java2s.com/ref/jar/download-mysqlconnectorjava5134jar-file.html
-https://sourceforge.net/projects/finj/files/finj-api/
-http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
-http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
+- http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
+- http://www.java2s.com/ref/jar/download-mysqlconnectorjava5134jar-file.html
+- https://sourceforge.net/projects/finj/files/finj-api/
+- http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
+- http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
 
 Once downloaded, you need to tell Java where to find them when the server is run. Depending on the version of Java you’ve installed, that either means simply copying those .jar files into the Java install’s ext directory (/usr/lib/jvm/java-8-oracle/jre/lib/ext), or for more recent versions, you may need to copy the .jar files into the server/ directory and then modify the server.sh script to add those files to the class path, something like this:
 
@@ -119,44 +119,44 @@ java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.
 
 
 14. Before running the server, you must create the databases and grant the server’s mysql user all permissions to those databases:
-mysql -u root -p [enter MySQL root password]
-create database ACCOUNTS;
-create database WOC1;
-grant all on ACCOUNTS.* to ‘woc2’;
-grant all on WOC1.* to ‘woc2’;
+- mysql -u root -p [enter MySQL root password]
+- create database ACCOUNTS;
+- create database WOC1;
+- grant all on ACCOUNTS.* to ‘woc2’;
+- grant all on WOC1.* to ‘woc2’;
 15. In order to automatically upload regular backups to a different server via FTP, the Config.json file must contain the backup server’s FTP info.
 16. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image. First install xvfb:
-sudo apt-get install xvfb
+- sudo apt-get install xvfb
 Then install various libraries it depends on:
-sudo apt install libXrender1
-sudo apt install libXtst6
-sudo apt install libXi6
+- sudo apt install libXrender1
+- sudo apt install libXtst6
+- sudo apt install libXi6
 (For more info: http://elementalselenium.com/tips/38-headless, https://askubuntu.com/questions/674579/libawt-xawt-so-libxext-so-6-cannot-open-shared-object-file-no-such-file-or-di)
 17. To prevent MySQL connections from timing out after the default 8 hours of inactivity, add the following to etc/mysql/my.cnf (if done by FTP, log in as root so it’s editable):
 [mysql]
-wait_timeout=2592000
+- wait_timeout=2592000
 Then to restart mysql: 
-service mysql restart
+- service mysql restart
 18. As above, in my.cnf set:
-max_allowed_packet	= 500M
+- max_allowed_packet	= 500M
 Likewise, if done via FTP log in as root. Then restart mysql.
-19. On the server that hosts the player account MYSQL DB,which must be accessed remotely, FTP login using root account and edit file etc/mysql/my.cnf to comment out (place # before) the line “bind-address = 127.0.0.1”. Doing so will allow remote connections. Then type “sudo service mysql restart”.
+19. On the server that hosts the player account MYSQL DB, which must be accessed remotely, login via SFTP using the root account and edit file etc/mysql/my.cnf to comment out (place # before) the line “bind-address = 127.0.0.1”. Doing so will allow remote connections. Then type “sudo service mysql restart”. (Note that if you're running just one WoC server, you'll likely want to host the player DB on that same game server. If you run more than one WoC server, it's up to you whether you want each one to have its own player DB, or if you'd like to host one shared player DB on one of your servers and have all of them use that one player DB. That would allow all of your game worlds to share the same set of player accounts.) 
 20. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
 Default configuration is fine.
 21. Install and use Uncomplicated Firewall (ufw) as described here:
 https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
 The following commands are needed to open the necessary ports:
-sudo ufw allow 2001
-sudo ufw allow http
-sudo ufw allow https
-sudo ufw allow ssh
+- sudo ufw allow 2001
+- sudo ufw allow http
+- sudo ufw allow https
+- sudo ufw allow ssh
 The following only applies if you are running multiple game servers that use the same player account database:
 On the server hosting the account DB, open the MySQL port to only the IP addresses of the other WoC servers. Eg.:
-sudo ufw allow from 104.237.143.194 to any port 3306
+- sudo ufw allow from 104.237.143.194 to any port 3306
 Enable ufw:
-sudo ufw enable
+- sudo ufw enable
 You can see all active rules like so:
-sudo ufw status
+- sudo ufw status
 22. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file.
 23. In the new server’s server/config.json, change the server_id. Each War of Conquest server that works with the official client must have its own unique ID, so I will let you know your server’s ID when you send me the new server’s IP address.  
 24. Also in the new server’s server/config.json file, set account_db_url to the MySQL url of your new server, for example jdbc:mysql://45.56.124.170/
@@ -168,11 +168,11 @@ Assorted notes you may eventually find handy:
 3. To capture heap dump: “jmap -dump:live,file=<file-path.hprof> <pid>”
 4. To restore server DB from backup:
 I can use the unzip command to unzip the backup file in place, then use cp to copy it up:
-cp backup.sql ../../../ 
+- cp backup.sql ../../../ 
 Copy or upload backup.sql int the dir I will run mysql from. Then:
-mysql -u root -p [enter root password]
-use WOC1;
-source backup.sql;
+- mysql -u root -p [enter root password]
+- use WOC1;
+- source backup.sql;
 5. To monitor network traffic: Log on as root, run iftop and glances.
 
 Updating a Linode Server
@@ -181,11 +181,11 @@ Updating a Linode Server
 1. Log in as root user.
 2. Run command: apt-get update && apt-get upgrade
 3. This may also update the Java JVM, which may remove the ext .jar files you’ve installed. To fix this, FTP to the server (using the root username) and upload the .jar files into /usr/lib/jvm/java-8-oracle/jre/lib/ext. These include:
-commons-codec-1.10.jar
-finj-1.1.5.jar
-ij.jar
-json-simple-1.1.1.jar
-mysql-connector-java-5.1.34-bin.jar
+- commons-codec-1.10.jar
+- finj-1.1.5.jar
+- ij.jar
+- json-simple-1.1.1.jar
+- mysql-connector-java-5.1.34-bin.jar
 
 Running the Game Server
 ===============================
@@ -199,23 +199,86 @@ In the same way, you’ll need to make a number of small maps to use as home isl
 
 Next, you’ll use the load_landscape command to load the landscape from the image file into the database. When you start a run of the server where you will be using the load_landscape or generate_map commands, start it this way:
 
-xvfb-run ./server.sh
+- xvfb-run ./server.sh
 
 That enables xvfb’s virtual frame buffer, which is necessary for those commands.
 
 To load the main landscape from a file named landgen_with_orbs.png, you would use this command:
 
-load_landscape id=1|file=landgen_with_orbs.png|really=1
+- load_landscape id=1|file=landgen_with_orbs.png|really=1
 
 You then need to load the various home island landscapes, as follows:
 
-load_landscape id=2|file=map_2.png
+- load_landscape id=2|file=map_2.png
 (Do this for map IDs 2 through 16, if using that many different home island images.)
 
 Finally, you’ll need to generate the map image that is displayed on the client, using this command:
 
-generate_map file=landgen_800_400_5000.png
-
+- generate_map file=landgen_800_400_5000.png
 
 4. In the server’s config.json file change the min_level_limit to the left-most x position on the map that you want level 1 players to be able to start at, as you determined in the previous step.
 5. You can now run the new game server using screen (as described above), test it, and then let in players!
+
+Building Your Own Client
+===============================
+Because the War of Conquest client makes use of code, images, sounds, music, 3d models and other assets that I do not own the rights to, I cannot make the full client open source. I have however made open source the code and assets that I do have the rights to distribute. These can be found in the client/ directory of the GitHub repository. This is just a starting point; because so many files are missing, it is nowhere near being able to build and run. To turn this into a working client, you would need to know your way around Unity and be able to integrate replacement assets, or else eliminate references to, everything that's missing. Alternatively, you can create your own original client using whatever software framework you'd like, and just use the provided client code as a reference for how to communicate with the server, how the client displays the 3D map, and so on.
+
+Here is a list of assets available through the Unity Asset Store that are used by the War of Conquest client, but that I cannot distribute in this repository because I do not own the rights to them. Note that some of these assets, as used in the WoC client, have been modified from their original form.
+
+- Texture Utility (Allebi)
+- 2DxFX: 2D Sprite FX (Vetasoft)
+- Highlight Glow System (3y3net)
+- Inventory Plus (3y3net)
+- AQUAS Lite
+- Stonehenge (Blex)
+- Blue Button Fantasy GUI
+- Stone Wall Pack (Zug Zug Art)
+- Cannon Pack (Belias)
+- Coconut Palm Tree (Focus3D)
+- Construction Site 1 (Kado 3D)
+- Crystal and Gems (DzenGames)
+- Easy Mobile Pro
+- Cross Platform Native Plugins
+- Steamworks.NET
+- Fantasy Monster Pack #5 (StudioEZ)
+- Beautiful Transitions (Flip Web Apps)
+- Flying Saucer (Tiger Shark Studios)
+- Genie (3dFoin)
+- URP - Ghost Shaders (Ciconia Studio)
+- Http Client (Clayton Industries)
+- I2 Localization (Inter Illusion)
+- Isometric Village 3D
+- Listbox (Orbcreation)
+- Low Poly Sci Fi Modular Structures (Kado 3D)
+- Lowpoly Crystals
+- Magical (Hardworker Studios)
+- Magical - Pro Edition (Hardworker Studios)
+- Magical Effects (Botumys)
+- Mining, Ore, Ingots, & Minerals Kit (Shadowball Games)
+- Ultimate VFX (Mirza Beig)
+- Fire & Fog MEGABundle 01 (NeatWolf)
+- Particle Ribbon (Moonflower Carnivore)
+- Paymentwall Unity SDK
+- Vectrosity (Starscene Software)
+- Procedural Lightning (Digital Ruby)
+- QuickEdit: Mesh Editor (Procore)
+- Ballistic Projectile Helper (Fairuz)
+- Gas Storage Pack (psr)
+- Better Rocks and Cliffs (Quantum Theory)
+- Rabid Assault Mech (Daniel Cole)
+- Detailed Radio Tower (Too Tidy Labs)
+- Satellite Dish (RK Assets)
+- Sci-Fi Turret & Effects (Maungers)
+- 10 Simple Weapons
+- Skulls Megapack / Low Poly (Brainbox)
+- Sky5X One (RKD)
+- Snake Head (Statue/Passage/Gate/Lair Entrance) (Deleon)
+- Standard Assets 2018.4 | Check out Starter Assets: First Person & Third Person
+- Super Mountain Collection (Super Game Tools)
+- Technical Laboratory: Reactor (Nick Stenton)
+- Ancient Temple (3DMONDRA)
+- TextMesh Pro
+- New UI Widgets (Ilia Novikov)
+- 3DRT - Wargear Turrets (3DRT)
+- World War II - American Plane (WalterLima3D)
+- Low-Poly Tanks (A. Olsen 'n Stuff)
