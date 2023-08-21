@@ -97,6 +97,7 @@ Putty can be used to access it via ssh. Take note of the IP address you will nee
 - home/admin/server/WOCServer/
 
 Within the “WOCServer” subdirectory directory, copy in all of the War of Conquest server .class files. Within the home/admin/server/ directory, copy in all the .tsv and .json files, and the map .png files, as well as server.sh. Within the home/admin/server/images/ directory, upload all of the image files from that directory in the repository.
+
 12. Make server.sh executable using “sudo chmod +x server.sh”. It can now be run using: “./server.sh”
 13. The War of Conquest server also depends on a few common java libraries. These .jar files are:
 
