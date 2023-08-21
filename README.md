@@ -49,7 +49,7 @@ Make sure the locations of the java and javac commands have been added to your p
 2. Download the required .jar files for common Java libraries. These files are:
 
 - json-simple-1.1.1.jar
-- mysql-connector-java-5.1.34-bin.jar
+- mysql-connector-java-5.1.46.jar
 - finj-1.1.5.jar
 - commons-codec-1.10.jar
 - ij.jar
@@ -57,7 +57,7 @@ Make sure the locations of the java and javac commands have been added to your p
 They are included in the repository, or can be downloaded from these URLs:
 
 - http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
-- http://www.java2s.com/ref/jar/download-mysqlconnectorjava5134jar-file.html
+- http://www.java2s.com/ref/jar/download-mysqlconnectorjava5146jar-file.html
 - https://sourceforge.net/projects/finj/files/finj-api/
 - http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
 - http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
@@ -102,7 +102,7 @@ Within the “WOCServer” subdirectory directory, copy in all of the War of Con
 13. The War of Conquest server also depends on a few common java libraries. These .jar files are:
 
 - json-simple-1.1.1.jar
-- mysql-connector-java-5.1.34-bin.jar
+- mysql-connector-java-5.1.46.jar
 - finj-1.1.5.jar
 - commons-codec-1.10.jar
 - ij.jar
@@ -110,14 +110,14 @@ Within the “WOCServer” subdirectory directory, copy in all of the War of Con
 They are included in the repository, or can be downloaded from these URLs:
 
 - http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm
-- http://www.java2s.com/ref/jar/download-mysqlconnectorjava5134jar-file.html
+- http://www.java2s.com/ref/jar/download-mysqlconnectorjava5146jar-file.html
 - https://sourceforge.net/projects/finj/files/finj-api/
 - http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
 - http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
 
 Once downloaded, you need to tell Java where to find them when the server is run. Depending on the version of Java you’ve installed, that either means simply copying those .jar files into the Java install’s ext directory (/usr/lib/jvm/java-8-openjdk/jre/lib/ext), or for more recent versions, you may need to copy the .jar files into the server/ directory and then modify the server.sh script to add those files to the class path, something like this:
 
-java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.jar:commons-codec-1.10.jar:ij.jar -Xms512m -Xmx2048m WOCServer.WOCServer 
+java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.46.jar:finj-1.1.5.jar:commons-codec-1.10.jar:ij.jar -Xms512m -Xmx2048m WOCServer.WOCServer 
 
 
 14. Before running the server, you must create the databases and grant the server’s mysql user (wocDBuser in this example) all permissions to those databases:
@@ -211,7 +211,7 @@ Updating a Linode Server
 - finj-1.1.5.jar
 - ij.jar
 - json-simple-1.1.1.jar
-- mysql-connector-java-5.1.34-bin.jar
+- mysql-connector-java-5.1.46.jar
 
 Running the Game Server
 ===============================
