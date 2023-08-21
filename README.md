@@ -127,19 +127,18 @@ java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.
 - GRANT ALL PRIVILEGES ON ACCOUNTS.* TO 'wocDBuser'@'localhost';
 - GRANT ALL PRIVILEGES ON WOC1.* TO 'wocDBuser'@'localhost';
 
-15. In order to automatically upload regular backups to a different server via FTP, the Config.json file must contain the backup server’s FTP info.
-16. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image:
+15. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image:
 - sudo apt-get install xvfb
 
 (For more info: https://linuxhint.com/install-xvfb-ubuntu/)
 
-17. Install Php on your server, as described here: https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/
-18. Upload the contents of the repository's "server/html/" directory into your server's public web directory (for example, typically something like "/var/www/html"). Then create the following subdirectories within that web directory:
+16. Install Php on your server, as described here: https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/
+17. Upload the contents of the repository's "server/html/" directory into your server's public web directory (for example, typically something like "/var/www/html"). Then create the following subdirectories within that web directory:
 - generated/clientmaps/
 - generated/publiclogs/
 - generated/ranks/
 
-19. To prevent MySQL connections from timing out after the default 8 hours of inactivity, make a copy of etc/mysql/mysql.cnf named etc/mysql/my.cnf (if done by FTP, log in as root so it’s editable), and add the following to it:
+18. To prevent MySQL connections from timing out after the default 8 hours of inactivity, make a copy of etc/mysql/mysql.cnf named etc/mysql/my.cnf (if done by FTP, log in as root so it’s editable), and add the following to it:
 
 [mysqld]  
 wait_timeout=2592000
@@ -153,7 +152,7 @@ On the server that hosts the player account MYSQL DB, which must be accessed rem
 
 Then enter the command “sudo service mysql restart” to restart mysql.
 
-20. Install and use Uncomplicated Firewall (ufw) as described here:
+19. Install and use Uncomplicated Firewall (ufw) as described here:
 https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
 The following commands are needed to add rules that open the necessary ports:
 - sudo ufw allow 2001
@@ -173,12 +172,20 @@ You can see all active rules like so:
 
 - sudo ufw status
 
-21. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
+20. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
 Default configuration is fine.
 
-22. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file.
-23. In the new server’s server/config.json, change the server_id. Each War of Conquest server that works with the official client must have its own unique ID, so I will let you know your server’s ID when you send me the new server’s IP address.  
-24. Also in the new server’s server/config.json file, set account_db_url to the MySQL url of your new server, for example jdbc:mysql://45.56.124.170/
+21. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file (see below; each War of Conquest server that works with the official client must have its own unique ID).
+22. There are serveral changes that will need to be made in the new server’s server/config.json file:
+- Change the server_id, to the number given to you in the previous step.
+- Set account_db_url to the MySQL url of your new server (or the server where your account DB will be located, if that's not the same server), for example jdbc:mysql://localhost/ or jdbc:mysql://45.56.124.170/.
+- Set the account_db_user and account_db_pass to the username and password for your MySQL account database.
+- Set the game_db_url to the MySQL url of your new server, for example jdbc:mysql://localhost/
+- Set the game_db_user and game_db_pass to the username and password for your MySQL game database. (This will be the same as for the account databse, unless the account DB is located on a different server.)
+- Set the public_gen_dir to the relative location of the generated/ subdirectory in the web html directory, for example "../../../var/www/html/generated/".
+- Set the private_gen_dir to the relative location of the server/gerenated/ directory, which should simply be "generated/". 
+- If you'd like to automatically upload regular backups to a different server via FTP, set the ftp_host, ftp_username and ftp_password to the FTP information for that backup server.
+- You can also try out changes to the various gameplay related setting in this file, such as the level limits for different areas of the map or the amount of orb payout per day, either now or later.
 
 Assorted notes you may eventually find handy:
 ------------------------------------------------------------
