@@ -152,24 +152,28 @@ On the server that hosts the player account MYSQL DB, which must be accessed rem
 
 Then enter the command “sudo service mysql restart” to restart mysql.
 
-20. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
-Default configuration is fine.
-
-21. Install and use Uncomplicated Firewall (ufw) as described here:
+20. Install and use Uncomplicated Firewall (ufw) as described here:
 https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
-The following commands are needed to open the necessary ports:
+The following commands are needed to add rules that open the necessary ports:
 - sudo ufw allow 2001
 - sudo ufw allow http
 - sudo ufw allow https
 - sudo ufw allow ssh
 
-The following only applies if you are running multiple game servers that use the same player account database:
+The following rule only needs to be added if you are running multiple game servers that use the same player account database:
 On the server hosting the account DB, open the MySQL port to only the IP addresses of the other WoC servers. Eg.:
 - sudo ufw allow from 104.237.143.194 to any port 3306
-Enable ufw:
+
+Then enable ufw:
+
 - sudo ufw enable
+
 You can see all active rules like so:
+
 - sudo ufw status
+
+21. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
+Default configuration is fine.
 
 22. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file.
 23. In the new server’s server/config.json, change the server_id. Each War of Conquest server that works with the official client must have its own unique ID, so I will let you know your server’s ID when you send me the new server’s IP address.  
