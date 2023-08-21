@@ -115,7 +115,7 @@ They are included in the repository, or can be downloaded from these URLs:
 - http://www.java2s.com/ref/jar/download-commonscodec110jar-file.html
 - http://www.java2s.com/Code/Jar/i/Downloadijjar.htm
 
-Once downloaded, you need to tell Java where to find them when the server is run. Depending on the version of Java you’ve installed, that either means simply copying those .jar files into the Java install’s ext directory (/usr/lib/jvm/java-8-oracle/jre/lib/ext), or for more recent versions, you may need to copy the .jar files into the server/ directory and then modify the server.sh script to add those files to the class path, something like this:
+Once downloaded, you need to tell Java where to find them when the server is run. Depending on the version of Java you’ve installed, that either means simply copying those .jar files into the Java install’s ext directory (/usr/lib/jvm/java-8-openjdk/jre/lib/ext), or for more recent versions, you may need to copy the .jar files into the server/ directory and then modify the server.sh script to add those files to the class path, something like this:
 
 java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.jar:commons-codec-1.10.jar:ij.jar -Xms512m -Xmx2048m WOCServer.WOCServer 
 
