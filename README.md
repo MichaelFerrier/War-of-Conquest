@@ -130,11 +130,7 @@ java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.
 16. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image. First install xvfb:
 - sudo apt-get install xvfb
 
-Then install various libraries it depends on:
-- sudo apt install libXrender1
-- sudo apt install libXtst6
-- sudo apt install libXi6
-(For more info: http://elementalselenium.com/tips/38-headless, https://askubuntu.com/questions/674579/libawt-xawt-so-libxext-so-6-cannot-open-shared-object-file-no-such-file-or-di)
+(For more info: https://linuxhint.com/install-xvfb-ubuntu/)
 17. Install Php on your server, as described here: https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/
 18. Upload the contents of the repository's "server/html/" directory into your server's public web directory (for example, typically something like "/var/www/html"). Then create the following subdirectories within that web directory:
 - generated/clientmaps/
