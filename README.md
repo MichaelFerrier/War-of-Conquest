@@ -131,6 +131,7 @@ java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.
 - sudo apt-get install xvfb
 
 (For more info: https://linuxhint.com/install-xvfb-ubuntu/)
+
 17. Install Php on your server, as described here: https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/
 18. Upload the contents of the repository's "server/html/" directory into your server's public web directory (for example, typically something like "/var/www/html"). Then create the following subdirectories within that web directory:
 - generated/clientmaps/
