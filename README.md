@@ -95,6 +95,7 @@ Putty can be used to access it via ssh. Take note of the IP address you will nee
 - home/admin/server/generated/ranks/
 - home/admin/server/images/
 - home/admin/server/WOCServer/
+
 Within the “WOCServer” subdirectory directory, copy in all of the War of Conquest server .class files. Within the home/admin/server/ directory, copy in all the .tsv and .json files, and the map .png files, as well as server.sh. Within the home/admin/server/images/ directory, upload all of the image files from that directory in the repository.
 12. Make server.sh executable using “sudo chmod +x server.sh”. It can now be run using: “./server.sh”
 13. The War of Conquest server also depends on a few common java libraries. These .jar files are:
@@ -135,10 +136,12 @@ Then install various libraries it depends on:
 17. To prevent MySQL connections from timing out after the default 8 hours of inactivity, add the following to etc/mysql/my.cnf (if done by FTP, log in as root so it’s editable):
 [mysql]
 - wait_timeout=2592000
+
 Then to restart mysql: 
 - service mysql restart
 18. As above, in my.cnf set:
 - max_allowed_packet	= 500M
+
 Likewise, if done via FTP log in as root. Then restart mysql.
 19. On the server that hosts the player account MYSQL DB, which must be accessed remotely, login via SFTP using the root account and edit file etc/mysql/my.cnf to comment out (place # before) the line “bind-address = 127.0.0.1”. Doing so will allow remote connections. Then type “sudo service mysql restart”. (Note that if you're running just one WoC server, you'll likely want to host the player DB on that same game server. If you run more than one WoC server, it's up to you whether you want each one to have its own player DB, or if you'd like to host one shared player DB on one of your servers and have all of them use that one player DB. That would allow all of your game worlds to share the same set of player accounts.) 
 20. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
@@ -150,6 +153,7 @@ The following commands are needed to open the necessary ports:
 - sudo ufw allow http
 - sudo ufw allow https
 - sudo ufw allow ssh
+
 The following only applies if you are running multiple game servers that use the same player account database:
 On the server hosting the account DB, open the MySQL port to only the IP addresses of the other WoC servers. Eg.:
 - sudo ufw allow from 104.237.143.194 to any port 3306
