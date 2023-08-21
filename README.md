@@ -138,20 +138,24 @@ java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.
 - generated/publiclogs/
 - generated/ranks/
 
-19. To prevent MySQL connections from timing out after the default 8 hours of inactivity, add the following to etc/mysql/my.cnf (if done by FTP, log in as root so it’s editable):
-[mysql]
-- wait_timeout=2592000
+19. To prevent MySQL connections from timing out after the default 8 hours of inactivity, make a copy of etc/mysql/mysql.cnf named etc/mysql/my.cnf (if done by FTP, log in as root so it’s editable), and add the following to it:
 
-Then to restart mysql: 
-- service mysql restart
-20. As above, in my.cnf set:
-- max_allowed_packet	= 500M
+[mysqld]
+wait_timeout=2592000
 
-Likewise, if done via FTP log in as root. Then restart mysql.
-21. On the server that hosts the player account MYSQL DB, which must be accessed remotely, login via SFTP using the root account and edit file etc/mysql/my.cnf to comment out (place # before) the line “bind-address = 127.0.0.1”. Doing so will allow remote connections. Then type “sudo service mysql restart”. (Note that if you're running just one WoC server, you'll likely want to host the player DB on that same game server. If you run more than one WoC server, it's up to you whether you want each one to have its own player DB, or if you'd like to host one shared player DB on one of your servers and have all of them use that one player DB. That would allow all of your game worlds to share the same set of player accounts.) 
-22. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
+Also add:
+
+[mysqldump]
+max_allowed_packet	= 500M
+
+On the server that hosts the player account MYSQL DB, which must be accessed remotely, int the file etc/mysql/my.cnf, comment out (place # before) the line “bind-address = 127.0.0.1”, if it is present. Doing so will allow remote connections. (Note that if you're running just one WoC server, you'll likely want to host the player DB on that same game server. If you run more than one WoC server, it's up to you whether you want each one to have its own player DB, or if you'd like to host one shared player DB on one of your servers and have all of them use that one player DB. That would allow all of your game worlds to share the same set of player accounts.) 
+
+Then enter the command “sudo service mysql restart” to restart mysql.
+
+20. For security, activate Fail2Ban on the server (to temp ban after 3 failed attempts to log in to ssh) following instructions here: https://www.linode.com/docs/security/using-fail2ban-for-security/
 Default configuration is fine.
-23. Install and use Uncomplicated Firewall (ufw) as described here:
+
+21. Install and use Uncomplicated Firewall (ufw) as described here:
 https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
 The following commands are needed to open the necessary ports:
 - sudo ufw allow 2001
@@ -166,9 +170,10 @@ Enable ufw:
 - sudo ufw enable
 You can see all active rules like so:
 - sudo ufw status
-24. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file.
-25. In the new server’s server/config.json, change the server_id. Each War of Conquest server that works with the official client must have its own unique ID, so I will let you know your server’s ID when you send me the new server’s IP address.  
-26. Also in the new server’s server/config.json file, set account_db_url to the MySQL url of your new server, for example jdbc:mysql://45.56.124.170/
+
+22. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file.
+23. In the new server’s server/config.json, change the server_id. Each War of Conquest server that works with the official client must have its own unique ID, so I will let you know your server’s ID when you send me the new server’s IP address.  
+24. Also in the new server’s server/config.json file, set account_db_url to the MySQL url of your new server, for example jdbc:mysql://45.56.124.170/
 
 Assorted notes you may eventually find handy:
 ------------------------------------------------------------
