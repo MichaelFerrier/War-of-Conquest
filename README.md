@@ -178,9 +178,9 @@ Default configuration is fine.
 21. If your server is intended to work with the official War of Conquest client, you will need to let me know the IP address of your new server so that I can add it to the list of server options that the client will display to players. You can email me at contact@ironzog.com. I will then give you the server_id number that you can set in the config.json file (see below; each War of Conquest server that works with the official client must have its own unique ID).
 22. There are serveral changes that will need to be made in the new server’s server/config.json file:
 - Change the server_id, to the number given to you in the previous step.
-- Set account_db_url to the MySQL url of your new server (or the server where your account DB will be located, if that's not the same server), for example jdbc:mysql://localhost/ or jdbc:mysql://45.56.124.170/.
+- Set account_db_url to the MySQL url of your new server (or the server where your account DB will be located, if that's not the same server), for example jdbc:mysql://localhost/?autoReconnect=true&useSSL=false or jdbc:mysql://45.56.124.170/?autoReconnect=true&useSSL=false.
 - Set the account_db_user and account_db_pass to the username and password for your MySQL account database.
-- Set the game_db_url to the MySQL url of your new server, for example jdbc:mysql://localhost/
+- Set the game_db_url to the MySQL url of your new server, for example jdbc:mysql://localhost/?autoReconnect=true&useSSL=false
 - Set the game_db_user and game_db_pass to the username and password for your MySQL game database. (This will be the same as for the account databse, unless the account DB is located on a different server.)
 - Set the public_gen_dir to the relative location of the generated/ subdirectory in the web html directory, for example "../../../var/www/html/generated/".
 - Set the private_gen_dir to the relative location of the server/gerenated/ directory, which should simply be "generated/". 
