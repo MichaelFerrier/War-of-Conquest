@@ -127,7 +127,7 @@ java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.
 - grant all on ACCOUNTS.* to ‘woc2’;
 - grant all on WOC1.* to ‘woc2’;
 15. In order to automatically upload regular backups to a different server via FTP, the Config.json file must contain the backup server’s FTP info.
-16. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image. First install xvfb:
+16. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image:
 - sudo apt-get install xvfb
 
 (For more info: https://linuxhint.com/install-xvfb-ubuntu/)
