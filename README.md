@@ -78,7 +78,7 @@ Putty can be used to access it via ssh. Take note of the IP address you will nee
 5. Connect using Putty (ssh). Log in as root, using password.
 6. Follow the guides to create a host name, set time zone, and create a non-root user. Take note of the non-root user’s username and password, this is what you will most often be logging in as, via ssh.
 7. Set up the Apache web server. (the web server is used to enable access to log files over the web, as well as letting players change usernames and passwords.)
-8. Install MySQL, create user (eg. “woc2”), and take note of the MySQL root password.
+8. Install MySQL, create user (eg. “wocDBuser”), and take note of the MySQL root password.
 9. FileZilla can be used to SFTP files to the server, using the server’s non-root admin username and password, and IP address, on port 22.
 10. Install Java8 as described here: http://tecadmin.net/install-oracle-java-8-jdk-8-ubuntu-via-ppa/
 11. Install the War of Conquest server files in home/admin/server/. Create the directory home/admin/server, and within it create these subdirectories:
@@ -120,12 +120,13 @@ Once downloaded, you need to tell Java where to find them when the server is run
 java -cp .:json-simple-1.1.1.jar:mysql-connector-java-5.1.34-bin.jar:finj-1.1.5.jar:commons-codec-1.10.jar:ij.jar -Xms512m -Xmx2048m WOCServer.WOCServer 
 
 
-14. Before running the server, you must create the databases and grant the server’s mysql user all permissions to those databases:
+14. Before running the server, you must create the databases and grant the server’s mysql user (wocDBuser in this example) all permissions to those databases:
 - mysql -u root -p (then enter MySQL root password when prompted)
 - create database ACCOUNTS;
 - create database WOC1;
-- grant all on ACCOUNTS.* to ‘woc2’;
-- grant all on WOC1.* to ‘woc2’;
+- GRANT ALL PRIVILEGES ON ACCOUNTS.* TO 'wocDBuser'@'localhost';
+- GRANT ALL PRIVILEGES ON WOC1.* TO 'wocDBuser'@'localhost';
+
 15. In order to automatically upload regular backups to a different server via FTP, the Config.json file must contain the backup server’s FTP info.
 16. Xvfb must be installed, to provide a virtual frame buffer for the imagej library, which is used to generate the UI map image:
 - sudo apt-get install xvfb
