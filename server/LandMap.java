@@ -320,6 +320,8 @@ public class LandMap
 				{
 					for (y = 0; y < height; y++)
 					{
+						if ((y % 100) == 0) Output.PrintToScreen("Y: " + y + " of " + height);
+
 						for (x = width; x < _width; x++)
 						{
 							// Populate the prepared statement for this block.
@@ -355,6 +357,8 @@ public class LandMap
 				{
 					for (y = Math.max(0,height); y < _height; y++)
 					{
+						if ((y % 100) == 0) Output.PrintToScreen("Y: " + y + " of " + height);
+						
 						for (x = 0; x < _width; x++)
 						{
 							// Populate the prepared statement for this block.

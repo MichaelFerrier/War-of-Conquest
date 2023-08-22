@@ -227,7 +227,7 @@ public class UserData extends BaseData
 		"mod_level, " +
 		"home_nationID, " +
 		"nationID, " +
-		"rank, " +
+		"`rank`, " +
 		"flags, " +
 		"name, " +
 		"email, " +
@@ -471,7 +471,7 @@ public class UserData extends BaseData
 		"mod_level = '" + mod_level + "', " +
 		"home_nationID = '" + home_nationID + "', " +
 		"nationID = '" + nationID + "', " +
-		"rank = '" + rank + "', " +
+		"`rank` = '" + rank + "', " +
 		"flags = '" + flags + "', " +
 		"name = '" + PrepStringForMySQL(name) + "', " +
 		"email = '" + PrepStringForMySQL(email) + "', " +
@@ -599,7 +599,7 @@ public class UserData extends BaseData
 		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD mod_level INT", true, false);
 		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD home_nationID INT", true, false);
 		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD nationID INT", true, false);
-		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD rank INT", true, false);
+		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD `rank` INT", true, false);
 		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD flags INT", true, false);
 		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD name VARCHAR(20)", true, false);
 		ExecuteUpdate(db, "ALTER TABLE " + db_table_name + " ADD email VARCHAR(50)", true, false);

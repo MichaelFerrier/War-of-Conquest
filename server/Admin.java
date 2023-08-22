@@ -1,4 +1,4 @@
-||//
+//
 // War of Conquest Server
 // Copyright (c) 2002-2023 Michael Ferrier, IronZog LLC
 //
@@ -1665,6 +1665,8 @@ public class Admin
 		// https://imagej.nih.gov/ij/developer/api/index.html
 		// https://imagej.nih.gov/ij/docs/guide/146.html
 
+		Output.PrintToScreen("Generating UI map...");
+
 		int MAP_WIDTH = 4096;
 		int MAP_MARGIN = 160;
 		Roi roi, land_roi, water_roi;
@@ -2533,6 +2535,8 @@ public class Admin
 			}
 		}
 
+		Output.PrintToScreen("Finalizing terain...");
+
 		// Examine each block, replacing some terrain types with others, depending on their neighbors.
 		for (y = 0; y < height; y++)
 		{
@@ -2720,6 +2724,8 @@ public class Admin
 				}
 			}
 		}
+
+		Output.PrintToScreen("Generating client map...");
 
 		// Generate the client map image to output.
 		int cur_terrain;
